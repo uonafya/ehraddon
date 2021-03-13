@@ -1,0 +1,7 @@
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/EHRaddonActivator.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/EHRaddonConfig.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/api/EHRaddonService.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705bReport.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705aReport.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/api/impl/EHRaddonServiceImpl.java
+/home/codehub/workspace/integrated_EHR/ehraddons/api/src/main/java/org/openmrs/module/ehraddons/api/dao/EHRaddonDao.java

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pc92SsUb5P93BgEB7FBUGaQcTa" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ehrreportaddon" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="" />
+      <created>1615471303038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615471303038</updated>
+      <workItem from="1615471306001" duration="871000" />
+      <workItem from="1615535978898" duration="3236000" />
+      <workItem from="1615552261042" duration="2313000" />
+      <workItem from="1615661437336" duration="870000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="732" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615471396650">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="732" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1615471396650" />
+    <state x="782" y="278" key="FileChooserDialogImpl" timestamp="1615552748973">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1615552748973" />
+    <state x="663" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1615661482458">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="663" y="245" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1615661482458" />
+    <state x="552" y="185" key="spring file set editor" timestamp="1615471663043">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="552" y="185" key="spring file set editor/65.24.1855.1056@65.24.1855.1056" timestamp="1615471663043" />
+  </component>
+</project>
