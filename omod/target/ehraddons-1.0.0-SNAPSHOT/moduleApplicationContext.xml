@@ -60,6 +60,7 @@
             <set>
                 <ref bean="ehraddons.common.715a" />
                 <ref bean="ehraddons.common.715b" />
+                <ref bean="ehraddons.common.717" />
 
             </set>
         </property>
@@ -79,6 +80,17 @@
         <property name="targetUuid" value="495ece88-8331-11eb-872a-270ce8ccc6b5" />
         <property name="name" value="MOH 705 B" />
         <property name="description" value="MOH 705 B Report" />
+        <property name="apps">
+            <set>
+                <ref bean="kenyaemr.app.reports" />
+            </set></property>
+        <property name="template" value="ehraddons:MOH_705b.xls" />
+    </bean>
+
+    <bean id="ehraddons.common.717" class="org.openmrs.module.kenyacore.report.IndicatorReportDescriptor">
+        <property name="targetUuid" value="27b030f4-85c7-11eb-810d-4b0bf1a63105" />
+        <property name="name" value="MOH 717" />
+        <property name="description" value="MOH 717 Report" />
         <property name="apps">
             <set>
                 <ref bean="kenyaemr.app.reports" />

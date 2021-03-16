@@ -1,6 +1,5 @@
 package org.openmrs.module.ehraddons.reports;
 
-import org.openmrs.module.ehraddons.reports.indicator.Moh705aIndicators;
 import org.openmrs.module.kenyacore.report.ReportDescriptor;
 import org.openmrs.module.kenyacore.report.builder.AbstractReportBuilder;
 import org.openmrs.module.kenyacore.report.builder.Builds;
@@ -9,7 +8,6 @@ import org.openmrs.module.reporting.dataset.definition.DataSetDefinition;
 import org.openmrs.module.reporting.evaluation.parameter.Mapped;
 import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 import org.openmrs.module.reporting.report.definition.ReportDefinition;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -19,15 +17,8 @@ import java.util.List;
 import static org.openmrs.module.kenyacore.report.ReportUtils.map;
 
 @Component
-@Builds({ "ehraddons.common.715a" })
-public class SetupMOH705aReport extends AbstractReportBuilder {
-	
-	private Moh705aIndicators indicators;
-	
-	@Autowired
-	public SetupMOH705aReport(Moh705aIndicators indicators) {
-		this.indicators = indicators;
-	}
+@Builds({ "ehraddons.common.717" })
+public class SetupMOH717Report extends AbstractReportBuilder {
 	
 	@Override
 	protected List<Parameter> getParameters(ReportDescriptor reportDescriptor) {
@@ -38,18 +29,17 @@ public class SetupMOH705aReport extends AbstractReportBuilder {
 	@Override
 	protected List<Mapped<DataSetDefinition>> buildDataSets(ReportDescriptor reportDescriptor,
 	        ReportDefinition reportDefinition) {
-		return Arrays.asList(map(getMoh715aReportDataset(), "startDate=${startDate},endDate=${endDate}"));
+		return Arrays.asList(map(getMoh717ReportDataset(), "startDate=${startDate},endDate=${endDate}"));
 	}
 	
-	private DataSetDefinition getMoh715aReportDataset() {
+	private DataSetDefinition getMoh717ReportDataset() {
 		CohortIndicatorDataSetDefinition dsd = new CohortIndicatorDataSetDefinition();
-		dsd.setName("MOH715A");
-		dsd.setDescription("MOH 715 A");
+		dsd.setName("MOH717");
+		dsd.setDescription("MOH 717");
 		dsd.addParameter(new Parameter("startDate", "Start Date", Date.class));
 		dsd.addParameter(new Parameter("endDate", "End Date", Date.class));
 		
 		String indParams = "startDate=${startDate},endDate=${endDate}";
-		dsd.addColumn("test", "test", map(indicators.getAllPatients(), indParams), "");
 		
 		return dsd;
 	}
