@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupAdultsLabResultsReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/resources/reports/labadults.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/ehraddons/web/controller/EHRaddonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/ehraddons/web/controller/EHRaddonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/ehraddons.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/ehraddons.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.omod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/lib/ehraddons-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/lib/ehraddons-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.ehraddons.AdminListExtensionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.ehraddons.AdminListExtensionTest.xml" afterDir="false" />
@@ -52,7 +58,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../patientdashboardapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/src/main/resources/reports" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/omod/src/main/resources/reports" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -70,7 +81,8 @@
       <workItem from="1615661437336" duration="1928000" />
       <workItem from="1615787226051" duration="10675000" />
       <workItem from="1615837338120" duration="2281000" />
-      <workItem from="1615877772924" duration="5441000" />
+      <workItem from="1615877772924" duration="6595000" />
+      <workItem from="1615963234366" duration="4478000" />
     </task>
     <servers />
   </component>
@@ -78,18 +90,19 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="805" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1615837766613">
+    <state x="805" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1615968070852">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
+    <state x="805" y="250" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056/1920.0.1024.768@65.24.1855.1056" timestamp="1615968070852" />
     <state x="805" y="250" key="#com.intellij.ide.util.MemberChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1615837766613" />
     <state x="732" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615471396650">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="732" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1615471396650" />
-    <state x="782" y="278" key="FileChooserDialogImpl" timestamp="1615894918519">
+    <state x="782" y="278" key="FileChooserDialogImpl" timestamp="1615966196657">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056/1920.0.1024.768@65.24.1855.1056" timestamp="1615894918519" />
+    <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056/1920.0.1024.768@65.24.1855.1056" timestamp="1615966196657" />
     <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1615552748973" />
     <state x="1178" y="278" key="FileChooserDialogImpl/65.24.2879.1056@65.24.2879.1056" timestamp="1615817712345" />
     <state x="663" y="245" width="673" height="678" key="search.everywhere.popup" timestamp="1615896410455">
