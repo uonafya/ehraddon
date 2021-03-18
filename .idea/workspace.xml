@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupAdultsLabResultsReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/src/main/resources/reports/labadults.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupChildrenLabResultsReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupAdultsLabResultsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupAdultsLabResultsReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/indicator/Moh705aCohortQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/indicator/Moh705aCohortQueries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/ehraddons-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT.omod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/lib/ehraddons-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/lib/ehraddons-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/ehraddons-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.ehraddons.AdminListExtensionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/TEST-org.openmrs.module.ehraddons.AdminListExtensionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.ehraddons.AdminListExtensionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/surefire-reports/org.openmrs.module.ehraddons.AdminListExtensionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/.~lock.MOH_705a.xls#" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,32 +27,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1pc92SsUb5P93BgEB7FBUGaQcTa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/src/main/resources/reports" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aihd-reports/pom.xml" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.openmrs.module.ehraddons.reports" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/omod/src/main/resources/reports" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -99,12 +83,17 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="732" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1615471396650" />
-    <state x="782" y="278" key="FileChooserDialogImpl" timestamp="1615966196657">
-      <screen x="65" y="24" width="1855" height="1056" />
+    <state x="742" y="250" key="FileChooserDialogImpl" timestamp="1616044024073">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="742" y="250" key="FileChooserDialogImpl/0.0.1920.1040/0.1080.720.1240/1461.1080.1280.680@0.0.1920.1040" timestamp="1616044024073" />
     <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056/1920.0.1024.768@65.24.1855.1056" timestamp="1615966196657" />
     <state x="782" y="278" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1615552748973" />
     <state x="1178" y="278" key="FileChooserDialogImpl/65.24.2879.1056@65.24.2879.1056" timestamp="1615817712345" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1615981169950">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/0.1080.720.1240/1461.1080.1280.680@0.0.1920.1040" timestamp="1615981169950" />
     <state x="663" y="245" width="673" height="678" key="search.everywhere.popup" timestamp="1615896410455">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
