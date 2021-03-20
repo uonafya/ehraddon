@@ -46,31 +46,16 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		//dsd.addDimension("days", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
 		dsd.setName("MOH705A");
 		dsd.addParameters(getParameters());
-		dsd.addColumn(
-				"D1",
-				"Diarrhoea-D1",
-				ReportUtils.map(
-						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 1), indParam), "");
-		dsd.addColumn(
-				"D2",
-				"Diarrhoea-D2",
-				ReportUtils.map(
-						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 2), indParam), "");
-		dsd.addColumn(
-				"D3",
-				"Diarrhoea-D3",
-				ReportUtils.map(
-						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 3), indParam), "");
-		dsd.addColumn(
-				"D4",
-				"Diarrhoea-D4",
-				ReportUtils.map(
-						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 4), indParam), "");
-		dsd.addColumn(
-		    "D5",
-		    "Diarrhoea-D5",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 5), indParam), "");
+		dsd.addColumn("D1", "Diarrhoea-D1", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 1), indParam), "");
+		dsd.addColumn("D2", "Diarrhoea-D2", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 2), indParam), "");
+		dsd.addColumn("D3", "Diarrhoea-D3", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 3), indParam), "");
+		dsd.addColumn("D4", "Diarrhoea-D4", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 4), indParam), "");
+		dsd.addColumn("D5", "Diarrhoea-D5", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 5), indParam), "");
 		
 		return dsd;
 		

@@ -1,6 +1,5 @@
 package org.openmrs.module.ehraddons.reporting.library.cohorts;
 
-import org.openmrs.annotation.Authorized;
 import org.openmrs.module.ehraddons.metadata.EhrAddonsMetadata;
 import org.openmrs.module.ehraddons.reporting.calculation.EncountersBasedOnDaySuppliedCalculation;
 import org.openmrs.module.ehraddons.reporting.library.queries.Moh705Queries;
@@ -9,9 +8,9 @@ import org.openmrs.module.kenyacore.report.cohort.definition.CalculationCohortDe
 import org.openmrs.module.reporting.cohort.definition.CohortDefinition;
 import org.openmrs.module.reporting.cohort.definition.CompositionCohortDefinition;
 import org.openmrs.module.reporting.cohort.definition.SqlCohortDefinition;
+import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 
 import java.util.Date;
 import java.util.List;

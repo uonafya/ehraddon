@@ -1,11 +1,9 @@
 package org.openmrs.module.ehraddons.reports;
 
 import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aDatasetDefinition;
-import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicators;
 import org.openmrs.module.kenyacore.report.ReportDescriptor;
 import org.openmrs.module.kenyacore.report.builder.AbstractReportBuilder;
 import org.openmrs.module.kenyacore.report.builder.Builds;
-import org.openmrs.module.reporting.dataset.definition.CohortIndicatorDataSetDefinition;
 import org.openmrs.module.reporting.dataset.definition.DataSetDefinition;
 import org.openmrs.module.reporting.evaluation.parameter.Mapped;
 import org.openmrs.module.reporting.evaluation.parameter.Parameter;

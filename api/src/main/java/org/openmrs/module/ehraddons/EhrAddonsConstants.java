@@ -18,11 +18,12 @@ public class EhrAddonsConstants {
 	}
 	
 	public final class _EhrAddOnConcepts {
+		
 		//Diahhe
 		public static final String CHRONIC_DIARRHOEA = "5018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 5018
 		
 		public static final String Protozoal_Diarrhoea = "113585AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 113585
-
+		
 		//end Diahoea
 	}
 	
