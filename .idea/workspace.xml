@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/ehraddons-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/ehraddons-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/cohorts/Moh705aCohortDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/cohorts/Moh705aCohortDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705aReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705aReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ehraddons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ehraddons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/ehraddons-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/ehraddons-omod.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/.~lock.MOH_705a.xls#" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/.~lock.MOH_705a.xls#" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/MOH_705a.xls" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/MOH_705b.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/labadults.xls" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/labadults.xls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +54,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/omod/src/main/resources/reports" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/omod/src/main/webapp/resources" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
