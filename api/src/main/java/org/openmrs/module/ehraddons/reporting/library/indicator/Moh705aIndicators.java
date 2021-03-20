@@ -22,9 +22,7 @@ public class Moh705aIndicators {
 	}
 	
 	public CohortIndicator getAllPatients(List<Integer> list) {
-		return cohortIndicator(
-		    "Diarrhoea",
-		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosis(list),
-		        "startDate=${startDate},endDate=${endDate}"));
+		return cohortIndicator("Diarrhoea",
+		    map(moh705aCohortDefinition.getPatientsWhoHaveDiagnosis(list), "startDate=${startDate},endDate=${endDate}"));
 	}
 }

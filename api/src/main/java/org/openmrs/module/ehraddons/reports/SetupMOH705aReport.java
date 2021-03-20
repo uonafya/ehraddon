@@ -1,6 +1,6 @@
 package org.openmrs.module.ehraddons.reports;
 
-import org.openmrs.module.ehraddons.reporting.library.dataset.Moh705aDatasetDefinition;
+import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aDatasetDefinition;
 import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicators;
 import org.openmrs.module.kenyacore.report.ReportDescriptor;
 import org.openmrs.module.kenyacore.report.builder.AbstractReportBuilder;
