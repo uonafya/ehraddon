@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/diagnosis/lists/DiagnosisLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/cohorts/Moh705aCohortDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/cohorts/Moh705aCohortDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/dataset/Moh705aDatasetDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aIndicatorDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aIndicatorDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aIndicators.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aIndicators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705aReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reports/SetupMOH705aReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

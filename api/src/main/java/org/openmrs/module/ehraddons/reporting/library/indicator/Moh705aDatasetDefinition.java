@@ -1,6 +1,7 @@
 package org.openmrs.module.ehraddons.reporting.library.indicator;
 
 import org.openmrs.module.ehraddons.EhrAddonsConstants;
+import org.openmrs.module.ehraddons.diagnosis.lists.DiagnosisLists;
 import org.openmrs.module.ehraddons.reporting.library.dataset.EhrAddOnBaseDataSet;
 import org.openmrs.module.ehraddons.reporting.library.dimesions.EhrAddonDimesion;
 import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicatorDefinition;
@@ -46,61 +47,30 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		dsd.setName("MOH705A");
 		dsd.addParameters(getParameters());
 		dsd.addColumn(
-		    "D1",
-		    "Diarrhoea-D1",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        ), 1), indParam), "");
+				"D1",
+				"Diarrhoea-D1",
+				ReportUtils.map(
+						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 1), indParam), "");
 		dsd.addColumn(
-		    "D2",
-		    "Diarrhoea-D2",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        ), 2), indParam), "");
+				"D2",
+				"Diarrhoea-D2",
+				ReportUtils.map(
+						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 2), indParam), "");
 		dsd.addColumn(
-		    "D3",
-		    "Diarrhoea-D3",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        ), 3), indParam), "");
+				"D3",
+				"Diarrhoea-D3",
+				ReportUtils.map(
+						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 3), indParam), "");
 		dsd.addColumn(
-		    "D4",
-		    "Diarrhoea-D4",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        ), 4), indParam), "");
+				"D4",
+				"Diarrhoea-D4",
+				ReportUtils.map(
+						moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 4), indParam), "");
 		dsd.addColumn(
 		    "D5",
 		    "Diarrhoea-D5",
 		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        ), 5), indParam), "");
-		
-		/*addRow(
-		    dsd,
-		    "D",
-		    "Diahrrhoa",
-		    ReportUtils.map(
-		        moh705aIndicator.getAllPatientsWithDiarrhoea(Arrays.asList(
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
-		            getConcept(EhrAddonsConstants._EhrAddOnConcepts.Protozoal_Diarrhoea).getConceptId()
-		        
-		        )), indParam), EhrAddonUtils.getAdultChildrenColumns());*/
+		        moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 5), indParam), "");
 		
 		return dsd;
 		
