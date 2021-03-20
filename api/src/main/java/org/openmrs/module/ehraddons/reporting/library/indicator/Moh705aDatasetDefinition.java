@@ -56,7 +56,58 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 4), indParam), "");
 		dsd.addColumn("D5", "Diarrhoea-D5", ReportUtils.map(
 		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 5), indParam), "");
-		
+		dsd.addColumn("D6", "Diarrhoea-D6", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 6), indParam), "");
+		dsd.addColumn("D7", "Diarrhoea-D7", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 7), indParam), "");
+		dsd.addColumn("D8", "Diarrhoea-D8", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 8), indParam), "");
+		dsd.addColumn("D9", "Diarrhoea-D9", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 9), indParam), "");
+		dsd.addColumn("D10", "Diarrhoea-D10", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 10), indParam), "");
+		dsd.addColumn("D11", "Diarrhoea-D11", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 11), indParam), "");
+		dsd.addColumn("D12", "Diarrhoea-D12", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 12), indParam), "");
+		dsd.addColumn("D13", "Diarrhoea-D13", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 13), indParam), "");
+		dsd.addColumn("D14", "Diarrhoea-D14", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 14), indParam), "");
+		dsd.addColumn("D15", "Diarrhoea-D15", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 15), indParam), "");
+		dsd.addColumn("D16", "Diarrhoea-D16", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 16), indParam), "");
+		dsd.addColumn("D17", "Diarrhoea-D17", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 17), indParam), "");
+		dsd.addColumn("D18", "Diarrhoea-D18", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 18), indParam), "");
+		dsd.addColumn("D19", "Diarrhoea-D19", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 19), indParam), "");
+		dsd.addColumn("D20", "Diarrhoea-D20", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 20), indParam), "");
+		dsd.addColumn("D21", "Diarrhoea-D21", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 21), indParam), "");
+		dsd.addColumn("D22", "Diarrhoea-D22", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 22), indParam), "");
+		dsd.addColumn("D23", "Diarrhoea-D23", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 23), indParam), "");
+		dsd.addColumn("D24", "Diarrhoea-D24", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 24), indParam), "");
+		dsd.addColumn("D25", "Diarrhoea-D25", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 25), indParam), "");
+		dsd.addColumn("D26", "Diarrhoea-D26", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 26), indParam), "");
+		dsd.addColumn("D27", "Diarrhoea-D27", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 27), indParam), "");
+		dsd.addColumn("D28", "Diarrhoea-D28", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 28), indParam), "");
+		dsd.addColumn("D29", "Diarrhoea-D29", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 29), indParam), "");
+		dsd.addColumn("D30", "Diarrhoea-D30", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 30), indParam), "");
+		dsd.addColumn("D31", "Diarrhoea-D31", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 31), indParam), "");
 		return dsd;
 		
 	}

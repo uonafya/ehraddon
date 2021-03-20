@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/diagnosis/lists/DiagnosisLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/diagnosis/lists/DiagnosisLists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ehraddons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ehraddons.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/ehraddons-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/ehraddons-omod.iml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/reporting/library/indicator/Moh705aDatasetDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xls" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xls" afterDir="false" />
+>>>>>>> moh705A
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
