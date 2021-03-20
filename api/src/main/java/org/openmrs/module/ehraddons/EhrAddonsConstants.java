@@ -19,12 +19,20 @@ public class EhrAddonsConstants {
 	
 	public final class _EhrAddOnConcepts {
 		
-		//Diahhe
-		public static final String CHRONIC_DIARRHOEA = "5018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 5018
+		// Diarrhoe
+		public static final String ACUTE_DIARRHEA = "149856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 		
-		public static final String Protozoal_Diarrhoea = "113585AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 113585
+		public static final String DIARRHEA_UNSPECIFIED = "91e4a7f4-f3d1-455e-991e-eb64a4df415b";
 		
-		//end Diahoea
+		public static final String FUNCTIONAL_DIARRHOEA = "139753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		
+		public static final String CHRONIC_DIARRHOEA = "5018AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		
+		//		public static final String DIARRHOEA_AND_GASTROENTERITIS_OF_PRESUMED_INFECTIOUS_ORIGIN =
+		//				"882643b0-55aa-4385-9aee-9a017bc8c6a4";
+		public static final String Hemorrhagic_Diarrhea = "138868AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		
+		public static final String Bacterial_Gastroenteritis = " 148023AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	}
 	
 	/**

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a69d38c2-cd25-425d-8dfd-588741b5f5c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/.~lock.MOH_705a.xls#" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/.~lock.MOH_705a.xls#" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/MOH_705a.xls" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/MOH_705a.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/MOH_705b.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/reports/labadults.xls" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/reports/labadults.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/EhrAddonsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/diagnosis/lists/DiagnosisLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/ehraddons/diagnosis/lists/DiagnosisLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ehraddons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ehraddons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/ehraddons-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/ehraddons-omod.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
