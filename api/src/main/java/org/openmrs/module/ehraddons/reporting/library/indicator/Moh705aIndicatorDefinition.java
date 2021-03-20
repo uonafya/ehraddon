@@ -20,10 +20,10 @@ public class Moh705aIndicatorDefinition {
 		this.moh705aCohortDefinition = moh705aCohortDefinition;
 	}
 	
-	public CohortIndicator getAllPatientsWithDiarrhoea(List<Integer> list) {
+	public CohortIndicator getAllPatientsWithDiarrhoea(List<Integer> list, int day) {
 		return cohortIndicator(
 		    "Diarrhoea",
-		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosis(list),
+		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosisOnAgivenDay(list, day),
 		        "startDate=${startDate},endDate=${endDate}"));
 	}
 }
