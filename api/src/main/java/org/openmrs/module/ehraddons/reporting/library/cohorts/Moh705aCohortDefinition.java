@@ -69,4 +69,5 @@ public class Moh705aCohortDefinition {
 		return cd;
 		
 	}
+	
 }

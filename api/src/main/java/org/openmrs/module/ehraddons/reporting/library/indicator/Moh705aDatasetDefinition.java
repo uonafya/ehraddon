@@ -35,17 +35,9 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		this.ehrAddonDimesion = ehrAddonDimesion;
 	}
 	
-	/**
-	 * Get moh 705 a dataset
-	 * 
-	 * @return @{@link org.openmrs.module.reporting.dataset.definition.DataSetDefinition}
-	 */
-	public DataSetDefinition getMoh705aDataset() {
-		CohortIndicatorDataSetDefinition dsd = new CohortIndicatorDataSetDefinition();
-		String indParam = "startDate=${startDate},endDate=${endDate}";
-		//dsd.addDimension("days", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
-		dsd.setName("MOH705A");
-		dsd.addParameters(getParameters());
+	@Autowired
+	private void getDiarrhoea(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("D1", "Diarrhoea-D1", ReportUtils.map(
 		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 1), indParam), "");
 		dsd.addColumn("D2", "Diarrhoea-D2", ReportUtils.map(
@@ -108,6 +100,23 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 30), indParam), "");
 		dsd.addColumn("D31", "Diarrhoea-D31", ReportUtils.map(
 		    moh705aIndicator.getAllPatientsWithDiarrhoea(DiagnosisLists.getDiarrheaDiagnosisList(), 31), indParam), "");
+		
+	}
+	
+	/**
+	 * Get moh 705 a dataset
+	 * 
+	 * @return @{@link org.openmrs.module.reporting.dataset.definition.DataSetDefinition}
+	 */
+	public DataSetDefinition getMoh705aDataset() {
+		CohortIndicatorDataSetDefinition dsd = new CohortIndicatorDataSetDefinition();
+		String indParam = "startDate=${startDate},endDate=${endDate}";
+		//dsd.addDimension("days", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
+		dsd.setName("MOH705A");
+		dsd.addParameters(getParameters());
+		// populate datasets
+		getDiarrhoea(dsd, indParam);
+		
 		return dsd;
 		
 	}
