@@ -35,7 +35,131 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		this.ehrAddonDimesion = ehrAddonDimesion;
 	}
 	
-	@Autowired
+	private void getTuberculosis(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn(
+		    "T1",
+		    "Tuberculosis-T1",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 1), indParam),
+		    "");
+		dsd.addColumn(
+		    "T2",
+		    "Tuberculosis-T2",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 2), indParam),
+		    "");
+		dsd.addColumn(
+		    "T3",
+		    "Tuberculosis-T3",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 3), indParam),
+		    "");
+		dsd.addColumn(
+		    "T4",
+		    "Tuberculosis-T4",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 4), indParam),
+		    "");
+		dsd.addColumn(
+		    "T5",
+		    "Tuberculosis-T5",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 5), indParam),
+		    "");
+		dsd.addColumn(
+		    "T6",
+		    "Tuberculosis-T6",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 6), indParam),
+		    "");
+		dsd.addColumn(
+		    "T7",
+		    "Tuberculosis-T7",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 7), indParam),
+		    "");
+		dsd.addColumn(
+		    "T8",
+		    "Tuberculosis-T8",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 8), indParam),
+		    "");
+		dsd.addColumn(
+		    "T9",
+		    "Tuberculosis-T9",
+		    ReportUtils.map(
+		        moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 9), indParam),
+		    "");
+		dsd.addColumn("T10", "Tuberculosis-T10", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 10), indParam),
+		    "");
+		dsd.addColumn("T11", "Tuberculosis-T11", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 11), indParam),
+		    "");
+		dsd.addColumn("T12", "Tuberculosis-T12", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 12), indParam),
+		    "");
+		dsd.addColumn("T13", "Tuberculosis-T13", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 13), indParam),
+		    "");
+		dsd.addColumn("T14", "Tuberculosis-T14", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 14), indParam),
+		    "");
+		dsd.addColumn("T15", "Tuberculosis-T15", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 15), indParam),
+		    "");
+		dsd.addColumn("T16", "Tuberculosis-T16", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 16), indParam),
+		    "");
+		dsd.addColumn("T17", "Tuberculosis-T17", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 17), indParam),
+		    "");
+		dsd.addColumn("T18", "Tuberculosis-T18", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 18), indParam),
+		    "");
+		dsd.addColumn("T19", "Tuberculosis-T19", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 19), indParam),
+		    "");
+		dsd.addColumn("T20", "Tuberculosis-T20", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 20), indParam),
+		    "");
+		dsd.addColumn("T21", "Tuberculosis-T21", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 21), indParam),
+		    "");
+		dsd.addColumn("T22", "Tuberculosis-T22", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 22), indParam),
+		    "");
+		dsd.addColumn("T23", "Tuberculosis-T23", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 23), indParam),
+		    "");
+		dsd.addColumn("T24", "Tuberculosis-T24", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 24), indParam),
+		    "");
+		dsd.addColumn("T25", "Tuberculosis-T25", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 25), indParam),
+		    "");
+		dsd.addColumn("T26", "Tuberculosis-T26", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 26), indParam),
+		    "");
+		dsd.addColumn("T27", "Tuberculosis-T27", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 27), indParam),
+		    "");
+		dsd.addColumn("T28", "Tuberculosis-T28", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 28), indParam),
+		    "");
+		dsd.addColumn("T29", "Tuberculosis-T29", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 29), indParam),
+		    "");
+		dsd.addColumn("T30", "Tuberculosis-T30", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 30), indParam),
+		    "");
+		dsd.addColumn("T31", "Tuberculosis-T31", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithTuberculosis(DiagnosisLists.getTuberculosisDiagnosisList(), 31), indParam),
+		    "");
+		
+	}
+	
 	private void getDiarrhoea(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("D1", "Diarrhoea-D1", ReportUtils.map(
