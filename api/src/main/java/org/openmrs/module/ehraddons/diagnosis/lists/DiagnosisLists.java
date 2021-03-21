@@ -10,9 +10,20 @@ import static org.openmrs.module.ehraddons.EhrAddonsConstants.getConcept;
 public class DiagnosisLists {
 	
 	public static List<Integer> getDiarrheaDiagnosisList() {
-		return Arrays.asList(getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
+		return Arrays.asList(
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_DIARRHEA).getConceptId(),
-		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.DIARRHEA_UNSPECIFIED).getConceptId(),
+		    //getConcept(EhrAddonsConstants._EhrAddOnConcepts.DIARRHEA_UNSPECIFIED).getConceptId(),
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.FUNCTIONAL_DIARRHOEA).getConceptId(),
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.Hemorrhagic_Diarrhea).getConceptId(),
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.Bacterial_Gastroenteritis).getConceptId());
+	}
+	
+	public static List<Integer> getTuberculosisDiagnosisList() {
+		return Arrays.asList(
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.CHRONIC_DIARRHOEA).getConceptId(),
+		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_DIARRHEA).getConceptId(),
+		    //getConcept(EhrAddonsConstants._EhrAddOnConcepts.DIARRHEA_UNSPECIFIED).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.FUNCTIONAL_DIARRHOEA).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.Hemorrhagic_Diarrhea).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.Bacterial_Gastroenteritis).getConceptId());
