@@ -1,7 +1,7 @@
-package org.openmrs.module.ehraddons.reporting.library.indicator;
+package org.openmrs.module.ehraddons.reporting.library.dataset;
 
 import org.openmrs.module.ehraddons.diagnosis.lists.DiagnosisLists;
-import org.openmrs.module.ehraddons.reporting.library.dataset.EhrAddOnBaseDataSet;
+import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicatorDefinition;
 import org.openmrs.module.kenyacore.report.ReportUtils;
 import org.openmrs.module.reporting.dataset.definition.CohortIndicatorDataSetDefinition;
 import org.openmrs.module.reporting.dataset.definition.DataSetDefinition;

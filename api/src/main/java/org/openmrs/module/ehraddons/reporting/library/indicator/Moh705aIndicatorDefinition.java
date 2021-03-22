@@ -27,19 +27,4 @@ public class Moh705aIndicatorDefinition {
 		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosisOnAgivenDay(list, day),
 		        "startDate=${startDate},endDate=${endDate}"));
 	}
-	
-	//	public CohortIndicator getAllPatientsWithDiarrhoea(List<Integer> list, int day) {
-	//		return cohortIndicator(
-	//		    "Diarrhoea",
-	//		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosisOnAgivenDay(list, day),
-	//		        "startDate=${startDate},endDate=${endDate}"));
-	//	}
-	
-	// Tuberculosis
-	//	public CohortIndicator getAllPatientsWithTuberculosis(List<Integer> list, int day) {
-	//		return cohortIndicator(
-	//		    "Tuberculosis",
-	//		    map(moh705aCohortDefinition.getChildrenPatientsWhoHaveDiagnosisOnAgivenDay(list, day),
-	//		        "startDate=${startDate},endDate=${endDate}"));
-	//	}
 }

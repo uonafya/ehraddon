@@ -5,7 +5,6 @@ import org.openmrs.api.context.Context;
 import org.openmrs.module.ehraddons.EhrAddonsConstants;
 import org.springframework.stereotype.Component;
 
-@Component
 public class EhrAddonsMetadata {
 	
 	/**
@@ -13,7 +12,7 @@ public class EhrAddonsMetadata {
 	 * 
 	 * @return ConceptClass
 	 */
-	public ConceptClass getDiagnosisConceptClass() {
+	public static ConceptClass getDiagnosisConceptClass() {
 		return Context.getConceptService().getConceptClassByUuid(EhrAddonsConstants._EhrAddOnConceptClasses.DIAGNOSIS_CLASS);
 	}
 	

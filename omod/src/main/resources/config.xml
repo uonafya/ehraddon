@@ -22,6 +22,7 @@
 	<!-- Required Modules -->
 	<require_modules>
 		<require_module>org.openmrs.module.kenyaemr</require_module>
+		<require_module>org.openmrs.module.uiframework</require_module>
 	</require_modules>
 	
 	<!-- Extensions -->
