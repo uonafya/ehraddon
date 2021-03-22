@@ -1,32 +1,17 @@
 package org.openmrs.module.ehraddons.reporting.library.indicator;
 
-import org.openmrs.module.ehraddons.EhrAddonsConstants;
 import org.openmrs.module.ehraddons.diagnosis.lists.DiagnosisLists;
 import org.openmrs.module.ehraddons.reporting.library.dataset.EhrAddOnBaseDataSet;
-import org.openmrs.module.ehraddons.reporting.library.dimesions.EhrAddonDimesion;
-import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicatorDefinition;
-import org.openmrs.module.ehraddons.reporting.utils.EhrAddonUtils;
 import org.openmrs.module.kenyacore.report.ReportUtils;
-import org.openmrs.module.kenyaemr.reporting.ColumnParameters;
-import org.openmrs.module.kenyaemr.reporting.EmrReportingUtils;
-import org.openmrs.module.kenyaemr.reporting.library.shared.common.CommonDimensionLibrary;
 import org.openmrs.module.reporting.dataset.definition.CohortIndicatorDataSetDefinition;
 import org.openmrs.module.reporting.dataset.definition.DataSetDefinition;
-import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
-import static org.openmrs.module.ehraddons.EhrAddonsConstants.getConcept;
 
 @Component
 public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 	
 	private Moh705aIndicatorDefinition moh705aIndicator;
-
 	
 	@Autowired
 	public Moh705aDatasetDefinition(Moh705aIndicatorDefinition moh705aIndicator) {
