@@ -419,6 +419,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	private void getNeonatalTetanus(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("OM1", "NeonatalTetanus-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 1), indParam), "");
+		dsd.addColumn("OM2", "NeonatalTetanus-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 2), indParam), "");
+		dsd.addColumn("OM3", "NeonatalTetanus-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 3), indParam), "");
+		dsd.addColumn("OM4", "NeonatalTetanus-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 4), indParam), "");
+		dsd.addColumn("OM5", "NeonatalTetanus-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 5), indParam), "");
+		dsd.addColumn("OM6", "NeonatalTetanus-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 6), indParam), "");
+		dsd.addColumn("OM7", "NeonatalTetanus-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 7), indParam), "");
+		dsd.addColumn("OM8", "NeonatalTetanus-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 8), indParam), "");
+		dsd.addColumn("OM9", "NeonatalTetanus-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 9), indParam), "");
+		dsd.addColumn("OM10", "NeonatalTetanus-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 10), indParam), "");
+		dsd.addColumn("OM11", "NeonatalTetanus-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 11), indParam), "");
+		dsd.addColumn("OM12", "NeonatalTetanus-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 12), indParam), "");
+		dsd.addColumn("OM13", "NeonatalTetanus-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 13), indParam), "");
+		dsd.addColumn("OM14", "NeonatalTetanus-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 14), indParam), "");
+		dsd.addColumn("OM15", "NeonatalTetanus-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 15), indParam), "");
+		dsd.addColumn("OM16", "NeonatalTetanus-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 16), indParam), "");
+		dsd.addColumn("OM17", "NeonatalTetanus-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 17), indParam), "");
+		dsd.addColumn("OM18", "NeonatalTetanus-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 18), indParam), "");
+		dsd.addColumn("OM19", "NeonatalTetanus-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 19), indParam), "");
+		dsd.addColumn("OM20", "NeonatalTetanus-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 20), indParam), "");
+		dsd.addColumn("OM21", "NeonatalTetanus-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 21), indParam), "");
+		dsd.addColumn("OM22", "NeonatalTetanus-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 22), indParam), "");
+		dsd.addColumn("OM23", "NeonatalTetanus-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 23), indParam), "");
+		dsd.addColumn("OM24", "NeonatalTetanus-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 24), indParam), "");
+		dsd.addColumn("OM25", "NeonatalTetanus-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 25), indParam), "");
+		dsd.addColumn("OM26", "NeonatalTetanus-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 26), indParam), "");
+		dsd.addColumn("OM27", "NeonatalTetanus-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 27), indParam), "");
+		dsd.addColumn("OM28", "NeonatalTetanus-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 28), indParam), "");
+		dsd.addColumn("OM29", "NeonatalTetanus-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 29), indParam), "");
+		dsd.addColumn("OM30", "NeonatalTetanus-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 30), indParam), "");
+		dsd.addColumn("OM31", "NeonatalTetanus-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 31), indParam), "");
+		
+	}
+
 
 	
 	/**
