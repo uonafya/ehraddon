@@ -1023,7 +1023,72 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
-	
+	private void getUrinaryTractInfection(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("UTI1", "UrinaryTractInfection-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 1), indParam), "");
+		dsd.addColumn("UTI2", "UrinaryTractInfection-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 2), indParam), "");
+		dsd.addColumn("UTI3", "UrinaryTractInfection-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 3), indParam), "");
+		dsd.addColumn("UTI4", "UrinaryTractInfection-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 4), indParam), "");
+		dsd.addColumn("UTI5", "UrinaryTractInfection-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 5), indParam), "");
+		dsd.addColumn("UTI6", "UrinaryTractInfection-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 6), indParam), "");
+		dsd.addColumn("UTI7", "UrinaryTractInfection-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 7), indParam), "");
+		dsd.addColumn("UTI8", "UrinaryTractInfection-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 8), indParam), "");
+		dsd.addColumn("UTI9", "UrinaryTractInfection-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 9), indParam), "");
+		dsd.addColumn("UTI10", "UrinaryTractInfection-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 10), indParam), "");
+		dsd.addColumn("UTI11", "UrinaryTractInfection-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 11), indParam), "");
+		dsd.addColumn("UTI12", "UrinaryTractInfection-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 12), indParam), "");
+		dsd.addColumn("UTI13", "UrinaryTractInfection-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 13), indParam), "");
+		dsd.addColumn("UTI14", "UrinaryTractInfection-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 14), indParam), "");
+		dsd.addColumn("UTI15", "UrinaryTractInfection-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 15), indParam), "");
+		dsd.addColumn("UTI16", "UrinaryTractInfection-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 16), indParam), "");
+		dsd.addColumn("UTI17", "UrinaryTractInfection-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 17), indParam), "");
+		dsd.addColumn("UTI18", "UrinaryTractInfection-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 18), indParam), "");
+		dsd.addColumn("UTI19", "UrinaryTractInfection-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 19), indParam), "");
+		dsd.addColumn("UTI20", "UrinaryTractInfection-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 20), indParam), "");
+		dsd.addColumn("UTI21", "UrinaryTractInfection-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 21), indParam), "");
+		dsd.addColumn("UTI22", "UrinaryTractInfection-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 22), indParam), "");
+		dsd.addColumn("UTI23", "UrinaryTractInfection-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 23), indParam), "");
+		dsd.addColumn("UTI24", "UrinaryTractInfection-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 24), indParam), "");
+		dsd.addColumn("UTI25", "UrinaryTractInfection-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 25), indParam), "");
+		dsd.addColumn("UTI26", "UrinaryTractInfection-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 26), indParam), "");
+		dsd.addColumn("UTI27", "UrinaryTractInfection-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 27), indParam), "");
+		dsd.addColumn("UTI28", "UrinaryTractInfection-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 28), indParam), "");
+		dsd.addColumn("UTI29", "UrinaryTractInfection-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 29), indParam), "");
+		dsd.addColumn("UTI30", "UrinaryTractInfection-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 30), indParam), "");
+		dsd.addColumn("UTI31", "UrinaryTractInfection-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 31), indParam), "");
+		
+	}
 
 	
 	
