@@ -33,7 +33,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getDysenteryList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -50,7 +50,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getCholeraList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -67,7 +67,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getMeningococcalMeningitisList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -84,7 +84,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getOtherMenigitisList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -101,7 +101,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getPoliomyelitisList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -118,7 +118,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getNeonatalTetanusList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -135,7 +135,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getChickenPoxList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -152,8 +152,8 @@ public class DiagnosisLists {
 		
 		);
 	}
-
-	public static List<Integer> getMeaslesListList() {
+	
+	public static List<Integer> getMeaslesList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.EXTRAPULMONARY_TUBERCULOSIS).getConceptId(),
@@ -169,8 +169,8 @@ public class DiagnosisLists {
 		
 		);
 	}
-
-	public static List<Integer> getHepatitislList() {
+	
+	public static List<Integer> getHepatitisList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.EXTRAPULMONARY_TUBERCULOSIS).getConceptId(),
@@ -186,7 +186,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getMumpsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -203,7 +203,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getFeversList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -220,7 +220,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getSuspectedMalariaList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -237,7 +237,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getConfirmedMalariaList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -254,7 +254,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getUrinaryTractInfectionList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -271,7 +271,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getTyphoidList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -288,7 +288,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getBilharziaList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -305,7 +305,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getInterstinalwormsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -322,7 +322,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getMalnutritionList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -339,7 +339,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getAnaemiaList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -356,7 +356,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getEyeInfectionsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -373,7 +373,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getOtherEyeConditionsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -390,7 +390,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getEarInfectionsConditionsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -407,7 +407,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getUpperRespiratoryTractInfectionsList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -424,7 +424,7 @@ public class DiagnosisLists {
 		
 		);
 	}
-
+	
 	public static List<Integer> getAsthmaList() {
 		return Arrays.asList(
 		    getConcept(EhrAddonsConstants._EhrAddOnConcepts.ACUTE_MILIARY_TUBERCULOSIS_UNSPECIFIED).getConceptId(),
@@ -441,6 +441,5 @@ public class DiagnosisLists {
 		
 		);
 	}
-
 	
 }
