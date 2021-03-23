@@ -352,6 +352,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	private void getOtherMenigitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("OM1", "OtherMenigitis-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 1), indParam), "");
+		dsd.addColumn("OM2", "OtherMenigitis-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 2), indParam), "");
+		dsd.addColumn("OM3", "OtherMenigitis-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 3), indParam), "");
+		dsd.addColumn("OM4", "OtherMenigitis-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 4), indParam), "");
+		dsd.addColumn("OM5", "OtherMenigitis-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 5), indParam), "");
+		dsd.addColumn("OM6", "OtherMenigitis-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 6), indParam), "");
+		dsd.addColumn("OM7", "OtherMenigitis-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 7), indParam), "");
+		dsd.addColumn("OM8", "OtherMenigitis-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 8), indParam), "");
+		dsd.addColumn("OM9", "OtherMenigitis-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 9), indParam), "");
+		dsd.addColumn("OM10", "OtherMenigitis-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 10), indParam), "");
+		dsd.addColumn("OM11", "OtherMenigitis-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 11), indParam), "");
+		dsd.addColumn("OM12", "OtherMenigitis-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 12), indParam), "");
+		dsd.addColumn("OM13", "OtherMenigitis-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 13), indParam), "");
+		dsd.addColumn("OM14", "OtherMenigitis-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 14), indParam), "");
+		dsd.addColumn("OM15", "OtherMenigitis-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 15), indParam), "");
+		dsd.addColumn("OM16", "OtherMenigitis-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 16), indParam), "");
+		dsd.addColumn("OM17", "OtherMenigitis-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 17), indParam), "");
+		dsd.addColumn("OM18", "OtherMenigitis-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 18), indParam), "");
+		dsd.addColumn("OM19", "OtherMenigitis-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 19), indParam), "");
+		dsd.addColumn("OM20", "OtherMenigitis-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 20), indParam), "");
+		dsd.addColumn("OM21", "OtherMenigitis-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 21), indParam), "");
+		dsd.addColumn("OM22", "OtherMenigitis-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 22), indParam), "");
+		dsd.addColumn("OM23", "OtherMenigitis-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 23), indParam), "");
+		dsd.addColumn("OM24", "OtherMenigitis-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 24), indParam), "");
+		dsd.addColumn("OM25", "OtherMenigitis-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 25), indParam), "");
+		dsd.addColumn("OM26", "OtherMenigitis-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 26), indParam), "");
+		dsd.addColumn("OM27", "OtherMenigitis-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 27), indParam), "");
+		dsd.addColumn("OM28", "OtherMenigitis-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 28), indParam), "");
+		dsd.addColumn("OM29", "OtherMenigitis-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 29), indParam), "");
+		dsd.addColumn("OM30", "OtherMenigitis-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 30), indParam), "");
+		dsd.addColumn("OM31", "OtherMenigitis-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), 31), indParam), "");
+		
+	}
+
 
 	
 	/**
