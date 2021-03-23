@@ -687,6 +687,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 31), indParam), "");
 		
 	}
+
+	private void getHepatitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("HP1", "Hepatitis-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 1), indParam), "");
+		dsd.addColumn("HP2", "Hepatitis-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 2), indParam), "");
+		dsd.addColumn("HP3", "Hepatitis-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 3), indParam), "");
+		dsd.addColumn("HP4", "Hepatitis-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 4), indParam), "");
+		dsd.addColumn("HP5", "Hepatitis-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 5), indParam), "");
+		dsd.addColumn("HP6", "Hepatitis-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 6), indParam), "");
+		dsd.addColumn("HP7", "Hepatitis-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 7), indParam), "");
+		dsd.addColumn("HP8", "Hepatitis-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 8), indParam), "");
+		dsd.addColumn("HP9", "Hepatitis-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 9), indParam), "");
+		dsd.addColumn("HP10", "Hepatitis-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 10), indParam), "");
+		dsd.addColumn("HP11", "Hepatitis-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 11), indParam), "");
+		dsd.addColumn("HP12", "Hepatitis-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 12), indParam), "");
+		dsd.addColumn("HP13", "Hepatitis-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 13), indParam), "");
+		dsd.addColumn("HP14", "Hepatitis-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 14), indParam), "");
+		dsd.addColumn("HP15", "Hepatitis-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 15), indParam), "");
+		dsd.addColumn("HP16", "Hepatitis-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 16), indParam), "");
+		dsd.addColumn("HP17", "Hepatitis-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 17), indParam), "");
+		dsd.addColumn("HP18", "Hepatitis-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 18), indParam), "");
+		dsd.addColumn("HP19", "Hepatitis-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 19), indParam), "");
+		dsd.addColumn("HP20", "Hepatitis-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 20), indParam), "");
+		dsd.addColumn("HP21", "Hepatitis-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 21), indParam), "");
+		dsd.addColumn("HP22", "Hepatitis-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 22), indParam), "");
+		dsd.addColumn("HP23", "Hepatitis-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 23), indParam), "");
+		dsd.addColumn("HP24", "Hepatitis-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 24), indParam), "");
+		dsd.addColumn("HP25", "Hepatitis-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 25), indParam), "");
+		dsd.addColumn("HP26", "Hepatitis-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 26), indParam), "");
+		dsd.addColumn("HP27", "Hepatitis-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 27), indParam), "");
+		dsd.addColumn("HP28", "Hepatitis-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 28), indParam), "");
+		dsd.addColumn("HP29", "Hepatitis-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 29), indParam), "");
+		dsd.addColumn("HP30", "Hepatitis-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 30), indParam), "");
+		dsd.addColumn("HP31", "Hepatitis-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 31), indParam), "");
+		
+	}
 	
 	/**
 	 * Get moh 705 a dataset
