@@ -1628,7 +1628,140 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 	}
 
 	
-	
+	private void getUpperRespiratoryTractInfections(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("UR1", "UpperRespiratoryTractInfections-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 1), indParam), "");
+		dsd.addColumn("UR2", "UpperRespiratoryTractInfections-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 2), indParam), "");
+		dsd.addColumn("UR3", "UpperRespiratoryTractInfections-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 3), indParam), "");
+		dsd.addColumn("UR4", "UpperRespiratoryTractInfections-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 4), indParam), "");
+		dsd.addColumn("UR5", "UpperRespiratoryTractInfections-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 5), indParam), "");
+		dsd.addColumn("UR6", "UpperRespiratoryTractInfections-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 6), indParam), "");
+		dsd.addColumn("UR7", "UpperRespiratoryTractInfections-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 7), indParam), "");
+		dsd.addColumn("UR8", "UpperRespiratoryTractInfections-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 8), indParam), "");
+		dsd.addColumn("UR9", "UpperRespiratoryTractInfections-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 9), indParam), "");
+		dsd.addColumn("UR10", "UpperRespiratoryTractInfections-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 10), indParam), "");
+		dsd.addColumn("UR11", "UpperRespiratoryTractInfections-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 11), indParam), "");
+		dsd.addColumn("UR12", "UpperRespiratoryTractInfections-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 12), indParam), "");
+		dsd.addColumn("UR13", "UpperRespiratoryTractInfections-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 13), indParam), "");
+		dsd.addColumn("UR14", "UpperRespiratoryTractInfections-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 14), indParam), "");
+		dsd.addColumn("UR15", "UpperRespiratoryTractInfections-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 15), indParam), "");
+		dsd.addColumn("UR16", "UpperRespiratoryTractInfections-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 16), indParam), "");
+		dsd.addColumn("UR17", "UpperRespiratoryTractInfections-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 17), indParam), "");
+		dsd.addColumn("UR18", "UpperRespiratoryTractInfections-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 18), indParam), "");
+		dsd.addColumn("UR19", "UpperRespiratoryTractInfections-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 19), indParam), "");
+		dsd.addColumn("UR20", "UpperRespiratoryTractInfections-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 20), indParam), "");
+		dsd.addColumn("UR21", "UpperRespiratoryTractInfections-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 21), indParam), "");
+		dsd.addColumn("UR22", "UpperRespiratoryTractInfections-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 22), indParam), "");
+		dsd.addColumn("UR23", "UpperRespiratoryTractInfections-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 23), indParam), "");
+		dsd.addColumn("UR24", "UpperRespiratoryTractInfections-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 24), indParam), "");
+		dsd.addColumn("UR25", "UpperRespiratoryTractInfections-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 25), indParam), "");
+		dsd.addColumn("UR26", "UpperRespiratoryTractInfections-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 26), indParam), "");
+		dsd.addColumn("UR27", "UpperRespiratoryTractInfections-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 27), indParam), "");
+		dsd.addColumn("UR28", "UpperRespiratoryTractInfections-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 28), indParam), "");
+		dsd.addColumn("UR29", "UpperRespiratoryTractInfections-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 29), indParam), "");
+		dsd.addColumn("UR30", "UpperRespiratoryTractInfections-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 30), indParam), "");
+		dsd.addColumn("UR31", "UpperRespiratoryTractInfections-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 31), indParam), "");
+		
+	}
+
+	private void getAsthma(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("AS1", "Asthma-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 1), indParam), "");
+		dsd.addColumn("AS2", "Asthma-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 2), indParam), "");
+		dsd.addColumn("AS3", "Asthma-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 3), indParam), "");
+		dsd.addColumn("AS4", "Asthma-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 4), indParam), "");
+		dsd.addColumn("AS5", "Asthma-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 5), indParam), "");
+		dsd.addColumn("AS6", "Asthma-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 6), indParam), "");
+		dsd.addColumn("AS7", "Asthma-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 7), indParam), "");
+		dsd.addColumn("AS8", "Asthma-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 8), indParam), "");
+		dsd.addColumn("AS9", "Asthma-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 9), indParam), "");
+		dsd.addColumn("AS10", "Asthma-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 10), indParam), "");
+		dsd.addColumn("AS11", "Asthma-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 11), indParam), "");
+		dsd.addColumn("AS12", "Asthma-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 12), indParam), "");
+		dsd.addColumn("AS13", "Asthma-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 13), indParam), "");
+		dsd.addColumn("AS14", "Asthma-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 14), indParam), "");
+		dsd.addColumn("AS15", "Asthma-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 15), indParam), "");
+		dsd.addColumn("AS16", "Asthma-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 16), indParam), "");
+		dsd.addColumn("AS17", "Asthma-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 17), indParam), "");
+		dsd.addColumn("AS18", "Asthma-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 18), indParam), "");
+		dsd.addColumn("AS19", "Asthma-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 19), indParam), "");
+		dsd.addColumn("AS20", "Asthma-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 20), indParam), "");
+		dsd.addColumn("AS21", "Asthma-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 21), indParam), "");
+		dsd.addColumn("AS22", "Asthma-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 22), indParam), "");
+		dsd.addColumn("AS23", "Asthma-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 23), indParam), "");
+		dsd.addColumn("AS24", "Asthma-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 24), indParam), "");
+		dsd.addColumn("AS25", "Asthma-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 25), indParam), "");
+		dsd.addColumn("AS26", "Asthma-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 26), indParam), "");
+		dsd.addColumn("AS27", "Asthma-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 27), indParam), "");
+		dsd.addColumn("AS28", "Asthma-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 28), indParam), "");
+		dsd.addColumn("AS29", "Asthma-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 29), indParam), "");
+		dsd.addColumn("AS30", "Asthma-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 30), indParam), "");
+		dsd.addColumn("AS31", "Asthma-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), 31), indParam), "");
+		
+	}
+
 	/**
 	 * Get moh 705 a dataset
 	 * 
