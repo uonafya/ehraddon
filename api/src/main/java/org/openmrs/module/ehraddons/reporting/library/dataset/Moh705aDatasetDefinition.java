@@ -821,6 +821,140 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 31), indParam), "");
 		
 	}
+
+	private void getFevers(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("F1", "Fevers-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 1), indParam), "");
+		dsd.addColumn("F2", "Fevers-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 2), indParam), "");
+		dsd.addColumn("F3", "Fevers-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 3), indParam), "");
+		dsd.addColumn("F4", "Fevers-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 4), indParam), "");
+		dsd.addColumn("F5", "Fevers-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 5), indParam), "");
+		dsd.addColumn("F6", "Fevers-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 6), indParam), "");
+		dsd.addColumn("F7", "Fevers-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 7), indParam), "");
+		dsd.addColumn("F8", "Fevers-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 8), indParam), "");
+		dsd.addColumn("F9", "Fevers-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 9), indParam), "");
+		dsd.addColumn("F10", "Fevers-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 10), indParam), "");
+		dsd.addColumn("F11", "Fevers-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 11), indParam), "");
+		dsd.addColumn("F12", "Fevers-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 12), indParam), "");
+		dsd.addColumn("F13", "Fevers-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 13), indParam), "");
+		dsd.addColumn("F14", "Fevers-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 14), indParam), "");
+		dsd.addColumn("F15", "Fevers-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 15), indParam), "");
+		dsd.addColumn("F16", "Fevers-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 16), indParam), "");
+		dsd.addColumn("F17", "Fevers-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 17), indParam), "");
+		dsd.addColumn("F18", "Fevers-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 18), indParam), "");
+		dsd.addColumn("F19", "Fevers-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 19), indParam), "");
+		dsd.addColumn("F20", "Fevers-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 20), indParam), "");
+		dsd.addColumn("F21", "Fevers-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 21), indParam), "");
+		dsd.addColumn("F22", "Fevers-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 22), indParam), "");
+		dsd.addColumn("F23", "Fevers-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 23), indParam), "");
+		dsd.addColumn("F24", "Fevers-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 24), indParam), "");
+		dsd.addColumn("F25", "Fevers-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 25), indParam), "");
+		dsd.addColumn("F26", "Fevers-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 26), indParam), "");
+		dsd.addColumn("F27", "Fevers-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 27), indParam), "");
+		dsd.addColumn("F28", "Fevers-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 28), indParam), "");
+		dsd.addColumn("F29", "Fevers-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 29), indParam), "");
+		dsd.addColumn("F30", "Fevers-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 30), indParam), "");
+		dsd.addColumn("F31", "Fevers-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), 31), indParam), "");
+		
+	}
+
+	private void getSuspectedMalaria(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("SM1", "SuspectedMalaria-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 1), indParam), "");
+		dsd.addColumn("SM2", "SuspectedMalaria-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 2), indParam), "");
+		dsd.addColumn("SM3", "SuspectedMalaria-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 3), indParam), "");
+		dsd.addColumn("SM4", "SuspectedMalaria-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 4), indParam), "");
+		dsd.addColumn("SM5", "SuspectedMalaria-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 5), indParam), "");
+		dsd.addColumn("SM6", "SuspectedMalaria-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 6), indParam), "");
+		dsd.addColumn("SM7", "SuspectedMalaria-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 7), indParam), "");
+		dsd.addColumn("SM8", "SuspectedMalaria-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 8), indParam), "");
+		dsd.addColumn("SM9", "SuspectedMalaria-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 9), indParam), "");
+		dsd.addColumn("SM10", "SuspectedMalaria-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 10), indParam), "");
+		dsd.addColumn("SM11", "SuspectedMalaria-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 11), indParam), "");
+		dsd.addColumn("SM12", "SuspectedMalaria-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 12), indParam), "");
+		dsd.addColumn("SM13", "SuspectedMalaria-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 13), indParam), "");
+		dsd.addColumn("SM14", "SuspectedMalaria-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 14), indParam), "");
+		dsd.addColumn("SM15", "SuspectedMalaria-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 15), indParam), "");
+		dsd.addColumn("SM16", "SuspectedMalaria-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 16), indParam), "");
+		dsd.addColumn("SM17", "SuspectedMalaria-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 17), indParam), "");
+		dsd.addColumn("SM18", "SuspectedMalaria-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 18), indParam), "");
+		dsd.addColumn("SM19", "SuspectedMalaria-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 19), indParam), "");
+		dsd.addColumn("SM20", "SuspectedMalaria-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 20), indParam), "");
+		dsd.addColumn("SM21", "SuspectedMalaria-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 21), indParam), "");
+		dsd.addColumn("SM22", "SuspectedMalaria-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 22), indParam), "");
+		dsd.addColumn("SM23", "SuspectedMalaria-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 23), indParam), "");
+		dsd.addColumn("SM24", "SuspectedMalaria-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 24), indParam), "");
+		dsd.addColumn("SM25", "SuspectedMalaria-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 25), indParam), "");
+		dsd.addColumn("SM26", "SuspectedMalaria-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 26), indParam), "");
+		dsd.addColumn("SM27", "SuspectedMalaria-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 27), indParam), "");
+		dsd.addColumn("SM28", "SuspectedMalaria-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 28), indParam), "");
+		dsd.addColumn("SM29", "SuspectedMalaria-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 29), indParam), "");
+		dsd.addColumn("SM30", "SuspectedMalaria-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 30), indParam), "");
+		dsd.addColumn("SM31", "SuspectedMalaria-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 31), indParam), "");
+		
+	}
 	
 	/**
 	 * Get moh 705 a dataset
