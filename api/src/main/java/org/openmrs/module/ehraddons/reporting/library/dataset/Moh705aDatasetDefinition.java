@@ -754,6 +754,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), 31), indParam), "");
 		
 	}
+
+	private void getMumps(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("MP1", "Mumps-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 1), indParam), "");
+		dsd.addColumn("MP2", "Mumps-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 2), indParam), "");
+		dsd.addColumn("MP3", "Mumps-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 3), indParam), "");
+		dsd.addColumn("MP4", "Mumps-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 4), indParam), "");
+		dsd.addColumn("MP5", "Mumps-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 5), indParam), "");
+		dsd.addColumn("MP6", "Mumps-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 6), indParam), "");
+		dsd.addColumn("MP7", "Mumps-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 7), indParam), "");
+		dsd.addColumn("MP8", "Mumps-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 8), indParam), "");
+		dsd.addColumn("MP9", "Mumps-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 9), indParam), "");
+		dsd.addColumn("MP10", "Mumps-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 10), indParam), "");
+		dsd.addColumn("MP11", "Mumps-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 11), indParam), "");
+		dsd.addColumn("MP12", "Mumps-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 12), indParam), "");
+		dsd.addColumn("MP13", "Mumps-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 13), indParam), "");
+		dsd.addColumn("MP14", "Mumps-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 14), indParam), "");
+		dsd.addColumn("MP15", "Mumps-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 15), indParam), "");
+		dsd.addColumn("MP16", "Mumps-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 16), indParam), "");
+		dsd.addColumn("MP17", "Mumps-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 17), indParam), "");
+		dsd.addColumn("MP18", "Mumps-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 18), indParam), "");
+		dsd.addColumn("MP19", "Mumps-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 19), indParam), "");
+		dsd.addColumn("MP20", "Mumps-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 20), indParam), "");
+		dsd.addColumn("MP21", "Mumps-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 21), indParam), "");
+		dsd.addColumn("MP22", "Mumps-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 22), indParam), "");
+		dsd.addColumn("MP23", "Mumps-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 23), indParam), "");
+		dsd.addColumn("MP24", "Mumps-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 24), indParam), "");
+		dsd.addColumn("MP25", "Mumps-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 25), indParam), "");
+		dsd.addColumn("MP26", "Mumps-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 26), indParam), "");
+		dsd.addColumn("MP27", "Mumps-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 27), indParam), "");
+		dsd.addColumn("MP28", "Mumps-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 28), indParam), "");
+		dsd.addColumn("MP29", "Mumps-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 29), indParam), "");
+		dsd.addColumn("MP30", "Mumps-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 30), indParam), "");
+		dsd.addColumn("MP31", "Mumps-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 31), indParam), "");
+		
+	}
 	
 	/**
 	 * Get moh 705 a dataset
