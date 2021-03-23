@@ -1090,6 +1090,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	private void getTyphoid(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("TY1", "Typhoid-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 1), indParam), "");
+		dsd.addColumn("TY2", "Typhoid-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 2), indParam), "");
+		dsd.addColumn("TY3", "Typhoid-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 3), indParam), "");
+		dsd.addColumn("TY4", "Typhoid-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 4), indParam), "");
+		dsd.addColumn("TY5", "Typhoid-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 5), indParam), "");
+		dsd.addColumn("TY6", "Typhoid-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 6), indParam), "");
+		dsd.addColumn("TY7", "Typhoid-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 7), indParam), "");
+		dsd.addColumn("TY8", "Typhoid-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 8), indParam), "");
+		dsd.addColumn("TY9", "Typhoid-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 9), indParam), "");
+		dsd.addColumn("TY10", "Typhoid-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 10), indParam), "");
+		dsd.addColumn("TY11", "Typhoid-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 11), indParam), "");
+		dsd.addColumn("TY12", "Typhoid-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 12), indParam), "");
+		dsd.addColumn("TY13", "Typhoid-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 13), indParam), "");
+		dsd.addColumn("TY14", "Typhoid-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 14), indParam), "");
+		dsd.addColumn("TY15", "Typhoid-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 15), indParam), "");
+		dsd.addColumn("TY16", "Typhoid-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 16), indParam), "");
+		dsd.addColumn("TY17", "Typhoid-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 17), indParam), "");
+		dsd.addColumn("TY18", "Typhoid-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 18), indParam), "");
+		dsd.addColumn("TY19", "Typhoid-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 19), indParam), "");
+		dsd.addColumn("TY20", "Typhoid-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 20), indParam), "");
+		dsd.addColumn("TY21", "Typhoid-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 21), indParam), "");
+		dsd.addColumn("TY22", "Typhoid-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 22), indParam), "");
+		dsd.addColumn("TY23", "Typhoid-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 23), indParam), "");
+		dsd.addColumn("TY24", "Typhoid-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 24), indParam), "");
+		dsd.addColumn("TY25", "Typhoid-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 25), indParam), "");
+		dsd.addColumn("TY26", "Typhoid-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 26), indParam), "");
+		dsd.addColumn("TY27", "Typhoid-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 27), indParam), "");
+		dsd.addColumn("TY28", "Typhoid-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 28), indParam), "");
+		dsd.addColumn("TY29", "Typhoid-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 29), indParam), "");
+		dsd.addColumn("TY30", "Typhoid-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 30), indParam), "");
+		dsd.addColumn("TY31", "Typhoid-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), 31), indParam), "");
+		
+	}
+
 	
 	
 	/**
