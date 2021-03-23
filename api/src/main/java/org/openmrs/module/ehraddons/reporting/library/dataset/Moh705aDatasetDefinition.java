@@ -552,6 +552,74 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), 31), indParam), "");
 		
 	}
+
+
+	private void getChickenPox(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("CP1", "ChickenPox-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 1), indParam), "");
+		dsd.addColumn("CP2", "ChickenPox-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 2), indParam), "");
+		dsd.addColumn("CP3", "ChickenPox-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 3), indParam), "");
+		dsd.addColumn("CP4", "ChickenPox-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 4), indParam), "");
+		dsd.addColumn("CP5", "ChickenPox-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 5), indParam), "");
+		dsd.addColumn("CP6", "ChickenPox-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 6), indParam), "");
+		dsd.addColumn("CP7", "ChickenPox-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 7), indParam), "");
+		dsd.addColumn("CP8", "ChickenPox-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 8), indParam), "");
+		dsd.addColumn("CP9", "ChickenPox-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 9), indParam), "");
+		dsd.addColumn("CP10", "ChickenPox-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 10), indParam), "");
+		dsd.addColumn("CP11", "ChickenPox-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 11), indParam), "");
+		dsd.addColumn("CP12", "ChickenPox-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 12), indParam), "");
+		dsd.addColumn("CP13", "ChickenPox-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 13), indParam), "");
+		dsd.addColumn("CP14", "ChickenPox-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 14), indParam), "");
+		dsd.addColumn("CP15", "ChickenPox-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 15), indParam), "");
+		dsd.addColumn("CP16", "ChickenPox-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 16), indParam), "");
+		dsd.addColumn("CP17", "ChickenPox-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 17), indParam), "");
+		dsd.addColumn("CP18", "ChickenPox-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 18), indParam), "");
+		dsd.addColumn("CP19", "ChickenPox-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 19), indParam), "");
+		dsd.addColumn("CP20", "ChickenPox-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 20), indParam), "");
+		dsd.addColumn("CP21", "ChickenPox-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 21), indParam), "");
+		dsd.addColumn("CP22", "ChickenPox-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 22), indParam), "");
+		dsd.addColumn("CP23", "ChickenPox-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 23), indParam), "");
+		dsd.addColumn("CP24", "ChickenPox-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 24), indParam), "");
+		dsd.addColumn("CP25", "ChickenPox-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 25), indParam), "");
+		dsd.addColumn("CP26", "ChickenPox-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 26), indParam), "");
+		dsd.addColumn("CP27", "ChickenPox-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 27), indParam), "");
+		dsd.addColumn("CP28", "ChickenPox-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 28), indParam), "");
+		dsd.addColumn("CP29", "ChickenPox-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 29), indParam), "");
+		dsd.addColumn("CP30", "ChickenPox-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 30), indParam), "");
+		dsd.addColumn("CP31", "ChickenPox-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 31), indParam), "");
+		
+	}
 	
 	/**
 	 * Get moh 705 a dataset
