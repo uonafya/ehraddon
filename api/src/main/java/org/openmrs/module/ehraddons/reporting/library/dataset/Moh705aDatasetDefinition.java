@@ -218,6 +218,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
 	private void getCholera(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("CH1", "Cholera-Day 1", ReportUtils.map(
@@ -285,6 +286,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	
 	private void getMeningococcalMeningitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("CH1", "MeningococcalMeningitis-Day 1", ReportUtils.map(
@@ -351,6 +353,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 31), indParam), "");
 		
 	}
+
+	
 
 	private void getOtherMenigitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -419,6 +423,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
 	private void getPoliomyelitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("P1", "Poliomyelitis-Day 1", ReportUtils.map(
@@ -485,6 +491,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPoliomyelitisList(), 31), indParam), "");
 		
 	}
+
+	
 
 	private void getNeonatalTetanus(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -553,6 +561,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	
 
 	private void getChickenPox(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -621,6 +630,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+	
+
 	private void getMeasles(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("MS1", "Measles-Day 1", ReportUtils.map(
@@ -687,6 +698,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 31), indParam), "");
 		
 	}
+
 
 	private void getHepatitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -755,6 +767,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
 	private void getMumps(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("MP1", "Mumps-Day 1", ReportUtils.map(
@@ -821,6 +835,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), 31), indParam), "");
 		
 	}
+
+
 
 	private void getFevers(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -889,6 +905,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
 	private void getSuspectedMalaria(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("SM1", "SuspectedMalaria-Day 1", ReportUtils.map(
@@ -955,6 +973,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), 31), indParam), "");
 		
 	}
+
 
 	private void getConfirmedMalaria(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -1023,6 +1042,9 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
+
 	private void getUrinaryTractInfection(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("UTI1", "UrinaryTractInfection-Day 1", ReportUtils.map(
@@ -1089,6 +1111,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), 31), indParam), "");
 		
 	}
+
+
 
 	private void getTyphoid(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -1157,6 +1181,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
 	private void getBilharzia(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("B1", "Bilharzia-Day 1", ReportUtils.map(
@@ -1223,7 +1248,6 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getBilharziaList(), 31), indParam), "");
 		
 	}
-
 	private void getInterstinalworms(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("IW1", "Interstinalworms-Day 1", ReportUtils.map(
@@ -1291,6 +1315,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
 	private void getMalnutrition(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("MN1", "Malnutrition-Day 1", ReportUtils.map(
@@ -1357,6 +1383,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMalnutritionList(), 31), indParam), "");
 		
 	}
+	
+
 
 	private void getAnaemia(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -1424,6 +1452,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAnaemiaList(), 31), indParam), "");
 		
 	}
+
+
 
 	private void getEyeInfections(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -1560,6 +1590,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
+
+
 	private void getEarInfectionsConditions(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("EIC1", "EarInfectionsConditions-Day 1", ReportUtils.map(
@@ -1627,7 +1659,7 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 	}
 
-	
+
 	private void getUpperRespiratoryTractInfections(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
 		dsd.addColumn("UR1", "UpperRespiratoryTractInfections-Day 1", ReportUtils.map(
@@ -1694,6 +1726,8 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), 31), indParam), "");
 		
 	}
+
+	
 
 	private void getAsthma(CohortIndicatorDataSetDefinition dsd, String indParam) {
 		//String indParam = "startDate=${startDate},endDate=${endDate}";
@@ -1776,6 +1810,31 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		// populate datasets
 		getDiarrhoea(dsd, indParam);
 		getTuberculosis(dsd, indParam);
+		getDysentery(dsd, indParam);
+		getCholera(dsd, indParam);
+		getMeningococcalMeningitis(dsd, indParam);
+		getOtherMenigitis(dsd, indParam);
+		getPoliomyelitis(dsd, indParam);
+		getNeonatalTetanus(dsd, indParam);
+		getChickenPox(dsd, indParam);
+		getMeasles(dsd, indParam);
+		getHepatitis(dsd, indParam); ###################
+		getMumps(dsd, indParam);
+		getFevers(dsd, indParam);
+		getSuspectedMalaria(dsd, indParam);
+		getConfirmedMalaria(dsd, indParam);
+		getUrinaryTractInfection(dsd, indParam);
+		getTyphoid(dsd, indParam);
+		getBilharzia(dsd, indParam);
+		getInterstinalworms(dsd, indParam);
+		getMalnutrition(dsd, indParam);
+		getAnaemia(dsd, indParam);
+		getEyeInfections(dsd, indParam);
+		getOtherEyeConditions(dsd, indParam);
+		getEarInfectionsConditions(dsd, indParam);
+		getUpperRespiratoryTractInfections(dsd, indParam);
+		getAsthma(dsd, indParam);
+															
 		
 		return dsd;
 		
