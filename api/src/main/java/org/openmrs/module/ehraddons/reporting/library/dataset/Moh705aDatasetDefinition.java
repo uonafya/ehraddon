@@ -150,6 +150,209 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		dsd.addColumn("D31", "Diarrhoea-D31", ReportUtils.map(
 		    moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), 31), indParam), "");
 	}
+
+	private void getDysentery(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("DY1", "Dysentery-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 1), indParam), "");
+		dsd.addColumn("DY2", "Dysentery-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 2), indParam), "");
+		dsd.addColumn("DY3", "Dysentery-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 3), indParam), "");
+		dsd.addColumn("DY4", "Dysentery-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 4), indParam), "");
+		dsd.addColumn("DY5", "Dysentery-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 5), indParam), "");
+		dsd.addColumn("DY6", "Dysentery-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 6), indParam), "");
+		dsd.addColumn("DY7", "Dysentery-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 7), indParam), "");
+		dsd.addColumn("DY8", "Dysentery-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 8), indParam), "");
+		dsd.addColumn("DY9", "Dysentery-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 9), indParam), "");
+		dsd.addColumn("DY10", "Dysentery-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 10), indParam), "");
+		dsd.addColumn("DY11", "Dysentery-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 11), indParam), "");
+		dsd.addColumn("DY12", "Dysentery-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 12), indParam), "");
+		dsd.addColumn("DY13", "Dysentery-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 13), indParam), "");
+		dsd.addColumn("DY14", "Dysentery-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 14), indParam), "");
+		dsd.addColumn("DY15", "Dysentery-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 15), indParam), "");
+		dsd.addColumn("DY16", "Dysentery-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 16), indParam), "");
+		dsd.addColumn("DY17", "Dysentery-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 17), indParam), "");
+		dsd.addColumn("DY18", "Dysentery-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 18), indParam), "");
+		dsd.addColumn("DY19", "Dysentery-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 19), indParam), "");
+		dsd.addColumn("DY20", "Dysentery-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 20), indParam), "");
+		dsd.addColumn("DY21", "Dysentery-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 21), indParam), "");
+		dsd.addColumn("DY22", "Dysentery-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 22), indParam), "");
+		dsd.addColumn("DY23", "Dysentery-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 23), indParam), "");
+		dsd.addColumn("DY24", "Dysentery-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 24), indParam), "");
+		dsd.addColumn("DY25", "Dysentery-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 25), indParam), "");
+		dsd.addColumn("DY26", "Dysentery-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 26), indParam), "");
+		dsd.addColumn("DY27", "Dysentery-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 27), indParam), "");
+		dsd.addColumn("DY28", "Dysentery-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 28), indParam), "");
+		dsd.addColumn("DY29", "Dysentery-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 29), indParam), "");
+		dsd.addColumn("DY30", "Dysentery-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 30), indParam), "");
+		dsd.addColumn("DY31", "Dysentery-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), 31), indParam), "");
+		
+	}
+
+	private void getCholera(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("CH1", "Cholera-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 1), indParam), "");
+		dsd.addColumn("CH2", "Cholera-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 2), indParam), "");
+		dsd.addColumn("CH3", "Cholera-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 3), indParam), "");
+		dsd.addColumn("CH4", "Cholera-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 4), indParam), "");
+		dsd.addColumn("CH5", "Cholera-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 5), indParam), "");
+		dsd.addColumn("CH6", "Cholera-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 6), indParam), "");
+		dsd.addColumn("CH7", "Cholera-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 7), indParam), "");
+		dsd.addColumn("CH8", "Cholera-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 8), indParam), "");
+		dsd.addColumn("CH9", "Cholera-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 9), indParam), "");
+		dsd.addColumn("CH10", "Cholera-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 10), indParam), "");
+		dsd.addColumn("CH11", "Cholera-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 11), indParam), "");
+		dsd.addColumn("CH12", "Cholera-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 12), indParam), "");
+		dsd.addColumn("CH13", "Cholera-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 13), indParam), "");
+		dsd.addColumn("CH14", "Cholera-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 14), indParam), "");
+		dsd.addColumn("CH15", "Cholera-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 15), indParam), "");
+		dsd.addColumn("CH16", "Cholera-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 16), indParam), "");
+		dsd.addColumn("CH17", "Cholera-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 17), indParam), "");
+		dsd.addColumn("CH18", "Cholera-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 18), indParam), "");
+		dsd.addColumn("CH19", "Cholera-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 19), indParam), "");
+		dsd.addColumn("CH20", "Cholera-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 20), indParam), "");
+		dsd.addColumn("CH21", "Cholera-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 21), indParam), "");
+		dsd.addColumn("CH22", "Cholera-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 22), indParam), "");
+		dsd.addColumn("CH23", "Cholera-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 23), indParam), "");
+		dsd.addColumn("CH24", "Cholera-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 24), indParam), "");
+		dsd.addColumn("CH25", "Cholera-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 25), indParam), "");
+		dsd.addColumn("CH26", "Cholera-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 26), indParam), "");
+		dsd.addColumn("CH27", "Cholera-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 27), indParam), "");
+		dsd.addColumn("CH28", "Cholera-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 28), indParam), "");
+		dsd.addColumn("CH29", "Cholera-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 29), indParam), "");
+		dsd.addColumn("CH30", "Cholera-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 30), indParam), "");
+		dsd.addColumn("CH31", "Cholera-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), 31), indParam), "");
+		
+	}
+
+	private void getMeningococcalMeningitis(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("CH1", "MeningococcalMeningitis-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 1), indParam), "");
+		dsd.addColumn("CH2", "MeningococcalMeningitis-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 2), indParam), "");
+		dsd.addColumn("CH3", "MeningococcalMeningitis-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 3), indParam), "");
+		dsd.addColumn("CH4", "MeningococcalMeningitis-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 4), indParam), "");
+		dsd.addColumn("CH5", "MeningococcalMeningitis-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 5), indParam), "");
+		dsd.addColumn("CH6", "MeningococcalMeningitis-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 6), indParam), "");
+		dsd.addColumn("CH7", "MeningococcalMeningitis-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 7), indParam), "");
+		dsd.addColumn("CH8", "MeningococcalMeningitis-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 8), indParam), "");
+		dsd.addColumn("CH9", "MeningococcalMeningitis-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 9), indParam), "");
+		dsd.addColumn("CH10", "MeningococcalMeningitis-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 10), indParam), "");
+		dsd.addColumn("CH11", "MeningococcalMeningitis-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 11), indParam), "");
+		dsd.addColumn("CH12", "MeningococcalMeningitis-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 12), indParam), "");
+		dsd.addColumn("CH13", "MeningococcalMeningitis-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 13), indParam), "");
+		dsd.addColumn("CH14", "MeningococcalMeningitis-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 14), indParam), "");
+		dsd.addColumn("CH15", "MeningococcalMeningitis-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 15), indParam), "");
+		dsd.addColumn("CH16", "MeningococcalMeningitis-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 16), indParam), "");
+		dsd.addColumn("CH17", "MeningococcalMeningitis-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 17), indParam), "");
+		dsd.addColumn("CH18", "MeningococcalMeningitis-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 18), indParam), "");
+		dsd.addColumn("CH19", "MeningococcalMeningitis-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 19), indParam), "");
+		dsd.addColumn("CH20", "MeningococcalMeningitis-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 20), indParam), "");
+		dsd.addColumn("CH21", "MeningococcalMeningitis-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 21), indParam), "");
+		dsd.addColumn("CH22", "MeningococcalMeningitis-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 22), indParam), "");
+		dsd.addColumn("CH23", "MeningococcalMeningitis-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 23), indParam), "");
+		dsd.addColumn("CH24", "MeningococcalMeningitis-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 24), indParam), "");
+		dsd.addColumn("CH25", "MeningococcalMeningitis-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 25), indParam), "");
+		dsd.addColumn("CH26", "MeningococcalMeningitis-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 26), indParam), "");
+		dsd.addColumn("CH27", "MeningococcalMeningitis-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 27), indParam), "");
+		dsd.addColumn("CH28", "MeningococcalMeningitis-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 28), indParam), "");
+		dsd.addColumn("CH29", "MeningococcalMeningitis-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 29), indParam), "");
+		dsd.addColumn("CH30", "MeningococcalMeningitis-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 30), indParam), "");
+		dsd.addColumn("CH31", "MeningococcalMeningitis-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), 31), indParam), "");
+		
+	}
+
+
 	
 	/**
 	 * Get moh 705 a dataset
