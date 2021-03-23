@@ -620,6 +620,73 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), 31), indParam), "");
 		
 	}
+
+	private void getMeasles(CohortIndicatorDataSetDefinition dsd, String indParam) {
+		//String indParam = "startDate=${startDate},endDate=${endDate}";
+		dsd.addColumn("MS1", "Measles-Day 1", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 1), indParam), "");
+		dsd.addColumn("MS2", "Measles-Day 2", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 2), indParam), "");
+		dsd.addColumn("MS3", "Measles-Day 3", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 3), indParam), "");
+		dsd.addColumn("MS4", "Measles-Day 4", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 4), indParam), "");
+		dsd.addColumn("MS5", "Measles-Day 5", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 5), indParam), "");
+		dsd.addColumn("MS6", "Measles-Day 6", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 6), indParam), "");
+		dsd.addColumn("MS7", "Measles-Day 7", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 7), indParam), "");
+		dsd.addColumn("MS8", "Measles-Day 8", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 8), indParam), "");
+		dsd.addColumn("MS9", "Measles-Day 9", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 9), indParam), "");
+		dsd.addColumn("MS10", "Measles-Day 10", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 10), indParam), "");
+		dsd.addColumn("MS11", "Measles-Day 11", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 11), indParam), "");
+		dsd.addColumn("MS12", "Measles-Day 12", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 12), indParam), "");
+		dsd.addColumn("MS13", "Measles-Day 13", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 13), indParam), "");
+		dsd.addColumn("MS14", "Measles-Day 14", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 14), indParam), "");
+		dsd.addColumn("MS15", "Measles-Day 15", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 15), indParam), "");
+		dsd.addColumn("MS16", "Measles-Day 16", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 16), indParam), "");
+		dsd.addColumn("MS17", "Measles-Day 17", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 17), indParam), "");
+		dsd.addColumn("MS18", "Measles-Day 18", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 18), indParam), "");
+		dsd.addColumn("MS19", "Measles-Day 19", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 19), indParam), "");
+		dsd.addColumn("MS20", "Measles-Day 20", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 20), indParam), "");
+		dsd.addColumn("MS21", "Measles-Day 21", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 21), indParam), "");
+		dsd.addColumn("MS22", "Measles-Day 22", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 22), indParam), "");
+		dsd.addColumn("MS23", "Measles-Day 23", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 23), indParam), "");
+		dsd.addColumn("MS24", "Measles-Day 24", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 24), indParam), "");
+		dsd.addColumn("MS25", "Measles-Day 25", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 25), indParam), "");
+		dsd.addColumn("MS26", "Measles-Day 26", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 26), indParam), "");
+		dsd.addColumn("MS27", "Measles-Day 27", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 27), indParam), "");
+		dsd.addColumn("MS28", "Measles-Day 28", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 28), indParam), "");
+		dsd.addColumn("MS29", "Measles-Day 29", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 29), indParam), "");
+		dsd.addColumn("MS30", "Measles-Day 30", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 30), indParam), "");
+		dsd.addColumn("MS31", "Measles-Day 31", ReportUtils.map(
+			moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), 31), indParam), "");
+		
+	}
 	
 	/**
 	 * Get moh 705 a dataset
