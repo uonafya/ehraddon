@@ -552,348 +552,337 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		}
 		
 	}
+	
 	private void getOtherInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
 	        String indParam) {
-
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
 			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			
 		}
-
+		
 	}
-
+	
 	private void getSexualAssault(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
 	        String indParam) {
-
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
 			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			
 		}
-
+		
 	}
-
+	
 	private void getViolenceRelatedInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getBurns(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	
+	private void getBurns(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getSnakeBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	
+	private void getSnakeBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getDogBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	
+	private void getDogBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getOtherBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	
+	private void getOtherBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getEpilepsy(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	
+	private void getEpilepsy(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-
+	
 	private void getNewlyDiagnosedHiv(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								  String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-
-	private void getDiabetes(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-							   String indParam) {
-
+	
+	private void getDiabetes(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getBrucellosis(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-								String indParam) {
-
+	
+	private void getBrucellosis(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
+	
 	private void getCardiovascularConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-											 String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getCentralNervousSystemConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-											 String indParam) {
-
+	
+	private void getCentralNervousSystemConditions(CohortIndicatorDataSetDefinition dsd, String columnData,
+	        String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getOvrerweight(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getOvrerweight(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getMuscularSkeletalConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getFistulaBirthRelated(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getNeoplams(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getNeoplams(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getPhysicalDisability(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getTryponomiasis(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getKalazarLeishmaniasis(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getDaracuncolosisGuineaWorm(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getYellowFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getYellowFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getViralHaemorrhagicFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getPlague(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getPlague(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getDeathDueToRoadTrafficInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getDeathDueToRoadTrafficInjuries(CohortIndicatorDataSetDefinition dsd, String columnData,
+	        String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getAllOtherDiseases(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getNoOfFirstAttendances(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getReAttendances(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getReferralsFromOtherHealthFacility(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getReferralsFromOtherHealthFacility(CohortIndicatorDataSetDefinition dsd, String columnData,
+	        String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
-	private void getReferralsFromOtherCommunityUnit(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	
+	private void getReferralsFromOtherCommunityUnit(CohortIndicatorDataSetDefinition dsd, String columnData,
+	        String columnLabel, String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	private void getReferralsToCommunityUnit(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
-												   String indParam) {
-
+	        String indParam) {
+		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
-
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			
 		}
-
+		
 	}
-
+	
 	/**
 	 * Get moh 705 a dataset
 	 * 
@@ -972,9 +961,10 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
 		getNoOfFirstAttendances(dsd, "NOA", "No. Of first attendances", indParam);//
 		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
-		getReferralsFromOtherHealthFacility(dsd, "RCA", "Referrals from other community unit", indParam);
+		getReferralsFromOtherHealthFacility(dsd, "RHA", "Referrals from other health facility", indParam);
+		getReferralsFromOtherCommunityUnit(dsd, "RCA", "Referrals from other community unit", indParam);
 		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
-
+		
 		return dsd;
 		
 	}
