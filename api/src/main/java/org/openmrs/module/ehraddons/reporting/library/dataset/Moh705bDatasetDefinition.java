@@ -155,7 +155,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDysenteryList(), i), indParam), "");
 			
 		}
 		
@@ -164,8 +164,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getCholera(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCholeraList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -176,7 +177,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -187,7 +189,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList(), i), indParam), "");
 			
 		}
 		
@@ -198,7 +200,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList(), i), indParam), "");
 			
 		}
 		
@@ -209,7 +211,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPoliomyelitisList(), i), indParam), "");
 			
 		}
 		
@@ -219,7 +221,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList(), i), indParam), "");
 			
 		}
 		
@@ -228,8 +230,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getMeasles(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMeaslesList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -239,7 +242,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHepatitisList(), i), indParam), "");
 			
 		}
 		
@@ -248,8 +251,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getMumps(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMumpsList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -258,8 +262,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getFevers(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFeversList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -270,7 +275,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList(), i), indParam), "");
 			
 		}
 		
@@ -281,7 +286,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getConfirmedMalariaList(), i), indParam), "");
 			
 		}
 		
@@ -301,8 +306,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getTyphoidFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTyphoidList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -324,7 +330,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -334,7 +341,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getBilharziaList(), i), indParam), "");
 			
 		}
 		
@@ -345,7 +352,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getInterstinalwormsList(), i), indParam), "");
 			
 		}
 		
@@ -355,7 +362,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMalnutritionList(), i), indParam), "");
 			
 		}
 		
@@ -364,8 +371,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getAneamia(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAnaemiaList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -376,7 +384,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getEyeInfectionsList(), i), indParam), "");
 			
 		}
 		
@@ -387,7 +395,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherEyeConditionsList(), i), indParam), "");
 			
 		}
 		
@@ -398,7 +406,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getEarInfectionsConditionsList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -409,7 +418,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getUpperRespiratoryTractInfectionsList(), i),
+			    indParam), "");
 			
 		}
 		
@@ -418,8 +428,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getAsthma(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAsthmaList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -429,7 +440,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPneumoniaList(), i), indParam), "");
 			
 		}
 		
@@ -440,7 +451,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherDisOfRespiratorySystemList(), i),
+			    indParam), "");
 			
 		}
 		
@@ -449,8 +461,11 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getAbortion(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAbortionList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -460,8 +475,10 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	        String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(
+			        moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDisOfPuerperiumChildbathList(), i),
+			        indParam), "");
 			
 		}
 		
@@ -471,7 +488,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getHypertensionList(), i), indParam), "");
 			
 		}
 		
@@ -482,7 +499,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMentalDisordersList(), i), indParam), "");
 			
 		}
 		
@@ -493,7 +510,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDentalDisordersList(), i), indParam), "");
 			
 		}
 		
@@ -504,7 +521,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getJiggersInfestationList(), i), indParam), "");
 			
 		}
 		
@@ -515,7 +532,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiseaseOfTheSkinList(), i), indParam), "");
 			
 		}
 		
@@ -526,7 +543,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getAnthritisJointPainsList(), i), indParam), "");
 			
 		}
 		
@@ -536,7 +553,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPoisoningList(), i), indParam), "");
 			
 		}
 		
@@ -547,7 +564,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getRoadTrafficInjuriesList(), i), indParam), "");
 			
 		}
 		
@@ -558,7 +575,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherInjuriesList(), i), indParam), "");
 			
 		}
 		
@@ -569,7 +586,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSexualAssaultList(), i), indParam), "");
 			
 		}
 		
@@ -580,7 +597,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getViolenceRelatedInjuriesList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -589,8 +607,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getBurns(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getBurnsList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -600,7 +619,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getSnakeBitesList(), i), indParam), "");
 			
 		}
 		
@@ -609,8 +628,11 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getDogBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDogBitesList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -620,7 +642,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOtherBitesList(), i), indParam), "");
 			
 		}
 		
@@ -629,8 +651,11 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getEpilepsy(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getEpilepsyList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -641,7 +666,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNewlyDiagnosedHivList(), i), indParam), "");
 			
 		}
 		
@@ -650,8 +675,11 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getDiabetes(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiabetesList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -661,7 +689,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getBrucellosisList(), i), indParam), "");
 			
 		}
 		
@@ -671,8 +699,10 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	        String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(
+			        moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCardiovascularConditionsList(), i),
+			        indParam), "");
 			
 		}
 		
@@ -683,7 +713,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getCentralNervousSystemConditionsList(), i),
+			    indParam), "");
 			
 		}
 		
@@ -693,7 +724,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getOvrerweightList(), i), indParam), "");
 			
 		}
 		
@@ -704,7 +735,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getMuscularSkeletalConditionsList(), i),
+			    indParam), "");
 			
 		}
 		
@@ -715,7 +747,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getFistulaBirthRelatedList(), i), indParam), "");
 			
 		}
 		
@@ -724,8 +756,11 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getNeoplams(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNeoplamsList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -736,7 +771,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPhysicalDisabilityList(), i), indParam), "");
 			
 		}
 		
@@ -747,7 +782,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getTryponomiasisList(), i), indParam), "");
 			
 		}
 		
@@ -757,8 +792,12 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	        String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(
+			        moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getKalazarLeishmaniasisList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -768,8 +807,10 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	        String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(
+			        moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDaracuncolosisGuineaWormList(), i),
+			        indParam), "");
 			
 		}
 		
@@ -779,7 +820,7 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getYellowFeverList(), i), indParam), "");
 			
 		}
 		
@@ -790,7 +831,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getViralHaemorrhagicFeverList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -799,8 +841,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	private void getPlague(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel, String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(columnData + i, columnLabel + '-' + i,
+			    ReportUtils.map(moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getPlagueList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -811,7 +854,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDeathDueToRoadTrafficInjuriesList(), i),
+			    indParam), "");
 			
 		}
 		
@@ -821,8 +865,12 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	        String indParam) {
 		
 		for (int i = 1; i <= 31; i++) {
-			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
-			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+			dsd.addColumn(
+			    columnData + i,
+			    columnLabel + '-' + i,
+			    ReportUtils.map(
+			        moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getNoOfFirstAttendancesList(), i), indParam),
+			    "");
 			
 		}
 		
@@ -900,73 +948,71 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getDysentery(dsd, "DYA", "Dysentery", indParam);
 		getCholera(dsd, "CHA", "Cholera", indParam);
 		getMeningococcalMeningitis(dsd, "MMA", "Meningitis", indParam);
-		
 		getOtherMeningitis(dsd, "MOA", "OtherMeningitis", indParam);
-		getNeonatalTetanus(dsd, "NTA", "Neonatal Tetanus", indParam);
+		getNeonatalTetanus(dsd, "NTA", "NeonatalTetanus", indParam);
 		getPoliomyelitis(dsd, "PMA", "Poliomyelitis", indParam);
-		getChickenPox(dsd, "CPA", "Chicken pox", indParam);
+		getChickenPox(dsd, "CPA", "Chickenpox", indParam);
 		getMeasles(dsd, "MEA", "Measles", indParam);
 		getHepatitis(dsd, "HEA", "Hepatitis", indParam);
 		getMumps(dsd, "MUA", "Mumps", indParam);
 		getFevers(dsd, "FEA", "Fevers", indParam);
+		getSuspectedMalaria(dsd, "SUA", "SuspectedMalaria", indParam);
+		getConfirmedMalaria(dsd, "COA", "MalariaPositive", indParam);
+		getMalariaInPregnancy(dsd, "MPA", "MalariaInPregnancy", indParam);//
+		getTyphoidFever(dsd, "TYA", "TyphoidFever", indParam);
+		getSexuallyTransmittedInfections(dsd, "STIA", "STI", indParam);
+		getUrinaryTractInfection(dsd, "URA", "UTI", indParam);
+		getBilharzia(dsd, "BIA", "Bilharzia", indParam);
+		getIntestinalWorms(dsd, "INA", "IntestinalWorms", indParam);
+		getMalnutrition(dsd, "MLA", "Malnutrition", indParam);//
+		getAneamia(dsd, "ANA", "Aneamia", indParam);
+		getEyeInfections(dsd, "EYA", "EyeInfections", indParam);
+		getOtherEyeConditions(dsd, "OTA", "OtherEyeConditions", indParam);
+		getEarInfectionConditions(dsd, "EAA", "EarInfectionConditions", indParam);
+		getUpperRespiratoryTractInfections(dsd, "UPA", "URTI", indParam);
+		getAsthma(dsd, "ASA", "Asthma", indParam);
+		getPneumonia(dsd, "PNA", "Pneumonia", indParam);
+		getOtherDisOfRespiratorySystem(dsd, "ORA", "OtherDisOfRespSystem", indParam);//
+		getAbortion(dsd, "ABA", "Abortion", indParam);//
+		getDisOfPuerperiumChildbath(dsd, "DPC", "PuerperiumChildbath", indParam);//
+		getHypertension(dsd, "HYA", "Hypertension", indParam);
+		getDentalDisorders(dsd, "DEA", "DentalDisorders", indParam);
+		getJiggersInfestation(dsd, "JIA", "JiggersInfestation", indParam);
+		getDiseaseOfTheSkin(dsd, "DSA", "DiseaseOfTheSkin", indParam);//
+		getAnthritisJointPains(dsd, "AJA", "Anthritisjointpains", indParam);//
+		getPoisoning(dsd, "POA", "Poisoning", indParam);//
+		getRoadTrafficInjuries(dsd, "ROA", "RoadTrafficInjuries", indParam);
+		getOtherInjuries(dsd, "OIA", "OtherInjuries", indParam);//
+		getSexualAssault(dsd, "SEA", "SexualAssault", indParam);
+		getViolenceRelatedInjuries(dsd, "VIA", "ViolenceRelatedInjuries", indParam);
+		getBurns(dsd, "BUA", "Burns", indParam);
+		getSnakeBites(dsd, "SNA", "Snakebites", indParam);
+		getDogBites(dsd, "DOA", "DogBites", indParam);
+		getOtherBites(dsd, "OBA", "OtherBites", indParam);//
+		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
+		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
+		getNewlyDiagnosedHiv(dsd, "NHA", "NewlyDiagnosedHiv", indParam);//
+		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
+		getCardiovascularConditions(dsd, "CAA", "CardiovascularConditions", indParam);
+		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
+		getMuscularSkeletalConditions(dsd, "MSA", "SkeletalConditions", indParam);
+		getFistulaBirthRelated(dsd, "FIA", "FistulaBirthRelated", indParam);
+		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
+		getPhysicalDisability(dsd, "PHA", "PhysicalDisability", indParam);//
+		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
+		getKalazarLeishmaniasis(dsd, "KAA", "KalazarLeishmaniasis", indParam);
+		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis", indParam);
+		getYellowFever(dsd, "YEA", "YellowFever", indParam);
+		getViralHaemorrhagicFever(dsd, "VHA", "ViralHaemorrhagicFever", indParam);//
+		getPlague(dsd, "PLA", "Plague", indParam);//
+		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "DeathDuetrafficinjuries", indParam);//
+		getAllOtherDiseases(dsd, "ALA", "otherdiseases", indParam);//
+		getNoOfFirstAttendances(dsd, "NOA", "FirstAttendances", indParam);//
+		getReAttendances(dsd, "RAA", "REAttendances", indParam);//
+		getReferralsFromOtherHealthFacility(dsd, "RHA", "HfacilityReferrals", indParam);
+		getReferralsFromOtherCommunityUnit(dsd, "RCA", "CommunityunitReferrrals", indParam);
+		getReferralsToCommunityUnit(dsd, "RCTA", "ReferralsTocommunity", indParam);
 		
-		//		getSuspectedMalaria(dsd, "SUA", "Suspected malaria", indParam);
-		//		getConfirmedMalaria(dsd, "COA", "Malaria positive", indParam);
-		//		getMalariaInPregnancy(dsd, "MPA", "Malaria In Pregnancy", indParam);//
-		//		getTyphoidFever(dsd, "TYA", "Typhoid Fever", indParam);
-		//		getSexuallyTransmittedInfections(dsd, "STIA", "STI", indParam);
-		//		getUrinaryTractInfection(dsd, "URA", "Urinary tract infection", indParam);
-		//		getBilharzia(dsd, "BIA", "Bilharzia", indParam);
-		//		getIntestinalWorms(dsd, "INA", "Intestinal worms", indParam);
-		//		getMalnutrition(dsd, "MLA", "Malnutrition", indParam);//
-		//		getAneamia(dsd, "ANA", "Aneamia", indParam);
-		//		getEyeInfections(dsd, "EYA", "Eye Infections", indParam);
-		//		getOtherEyeConditions(dsd, "OTA", "Other Eye Conditions", indParam);
-		//		getEarInfectionConditions(dsd, "EAA", "Ear Infection or Conditions", indParam);
-		//		getUpperRespiratoryTractInfections(dsd, "UPA", "URTI", indParam);
-		//		getAsthma(dsd, "ASA", "Asthma", indParam);
-		//		getPneumonia(dsd, "PNA", "Pneumonia", indParam);
-		//		getOtherDisOfRespiratorySystem(dsd, "ORA", "Other Dis Of Resp System", indParam);//
-		//		getAbortion(dsd, "ABA", "Abortion", indParam);//
-		//		getDisOfPuerperiumChildbath(dsd, "DPC", "Puerperium  Childbath", indParam);//
-		//		getHypertension(dsd, "HYA", "Hypertension", indParam);
-		//		getDentalDisorders(dsd, "DEA", "Dental Disorders", indParam);
-		//		getJiggersInfestation(dsd, "JIA", "Jiggers Infestation", indParam);
-		//		getDiseaseOfTheSkin(dsd, "DSA", "Disease Of The Skin", indParam);//
-		//		getAnthritisJointPains(dsd, "AJA", "Anthritis, joint pains", indParam);//
-		//		getPoisoning(dsd, "POA", "Poisoning", indParam);//
-		//		getRoadTrafficInjuries(dsd, "ROA", "Road Traffic Injuries", indParam);
-		//		getOtherInjuries(dsd, "OIA", "Other Injuries", indParam);//
-		//		getSexualAssault(dsd, "SEA", "Sexual Assault", indParam);
-		//		getViolenceRelatedInjuries(dsd, "VIA", "Violence Related Injuries", indParam);
-		//		getBurns(dsd, "BUA", "Burns", indParam);
-		//		getSnakeBites(dsd, "SNA", "Snake bites", indParam);
-		//		getDogBites(dsd, "DOA", "Dog Bites", indParam);
-		//		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
-		//		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
-		//		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
-		//		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
-		//		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
-		//		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
-		//		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
-		//		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
-		//		getFistulaBirthRelated(dsd, "FIA", "Fistula Birth Related", indParam);
-		//		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
-		//		getPhysicalDisability(dsd, "PHA", "Physical Disability", indParam);//
-		//		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
-		//		getKalazarLeishmaniasis(dsd, "KAA", "Kalazar leishmaniasis", indParam);
-		//		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis guinea worm", indParam);
-		//		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
-		//		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
-		//		getPlague(dsd, "PLA", "Plague", indParam);//
-		//		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
-		//		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
-		//		getNoOfFirstAttendances(dsd, "NOA", "No Of first attendances", indParam);//
-		//		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
-		//		getReferralsFromOtherHealthFacility(dsd, "RHA", "Health facility Referrals", indParam);
-		//		getReferralsFromOtherCommunityUnit(dsd, "RCA", "Referrals from community unit", indParam);
-		//		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
-		//		
 		return dsd;
 		
 	}
