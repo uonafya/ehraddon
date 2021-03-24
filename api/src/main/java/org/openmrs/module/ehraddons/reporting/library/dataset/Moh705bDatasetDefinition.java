@@ -899,72 +899,74 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getTuberculosis(dsd, indParam);
 		getDysentery(dsd, "DYA", "Dysentery", indParam);
 		getCholera(dsd, "CHA", "Cholera", indParam);
-		getMeningococcalMeningitis(dsd, "MMA", "Meningococcal Meningitis", indParam);
-		getOtherMeningitis(dsd, "MOA", "Other Meningitis", indParam);
+		getMeningococcalMeningitis(dsd, "MMA", "Meningitis", indParam);
+		
+		getOtherMeningitis(dsd, "MOA", "OtherMeningitis", indParam);
 		getNeonatalTetanus(dsd, "NTA", "Neonatal Tetanus", indParam);
-		getPoliomyelitis(dsd, "PMA", "Poliomyelitis(AFP)", indParam);
+		getPoliomyelitis(dsd, "PMA", "Poliomyelitis", indParam);
 		getChickenPox(dsd, "CPA", "Chicken pox", indParam);
 		getMeasles(dsd, "MEA", "Measles", indParam);
 		getHepatitis(dsd, "HEA", "Hepatitis", indParam);
 		getMumps(dsd, "MUA", "Mumps", indParam);
 		getFevers(dsd, "FEA", "Fevers", indParam);
-		getSuspectedMalaria(dsd, "SUA", "Suspected malaria", indParam);
-		getConfirmedMalaria(dsd, "COA", "Confirmed Malaria (Only positive cases)", indParam);
-		getMalariaInPregnancy(dsd, "MPA", "Malaria In Pregnancy", indParam);//
-		getTyphoidFever(dsd, "TYA", "Typhoid Fever", indParam);
-		getSexuallyTransmittedInfections(dsd, "STIA", "Sexually Transmitted Infections", indParam);
-		getUrinaryTractInfection(dsd, "URA", "Urinary tract infection", indParam);
-		getBilharzia(dsd, "BIA", "Bilharzia", indParam);
-		getIntestinalWorms(dsd, "INA", "Intestinal worms", indParam);
-		getMalnutrition(dsd, "MLA", "Malnutrition", indParam);//
-		getAneamia(dsd, "ANA", "Aneamia", indParam);
-		getEyeInfections(dsd, "EYA", "Eye Infections", indParam);
-		getOtherEyeConditions(dsd, "OTA", "Other Eye Conditions", indParam);
-		getEarInfectionConditions(dsd, "EAA", "Ear Infection/Conditions", indParam);
-		getUpperRespiratoryTractInfections(dsd, "UPA", "Upper Respiratory Tract Infections", indParam);
-		getAsthma(dsd, "ASA", "Asthma", indParam);
-		getPneumonia(dsd, "PNA", "Pneumonia", indParam);
-		getOtherDisOfRespiratorySystem(dsd, "ORA", "Other Dis. Of Respiratory System", indParam);//
-		getAbortion(dsd, "ABA", "Abortion", indParam);//
-		getDisOfPuerperiumChildbath(dsd, "DPC", "Dis. Of Puerperium & Childbath", indParam);//
-		getHypertension(dsd, "HYA", "Hypertension", indParam);
-		getDentalDisorders(dsd, "DEA", "Dental Disorders", indParam);
-		getJiggersInfestation(dsd, "JIA", "Jiggers Infestation", indParam);
-		getDiseaseOfTheSkin(dsd, "DSA", "Disease Of The Skin", indParam);//
-		getAnthritisJointPains(dsd, "AJA", "Anthritis, joint pains", indParam);//
-		getPoisoning(dsd, "POA", "Poisoning", indParam);//
-		getRoadTrafficInjuries(dsd, "ROA", "Road Traffic Injuries", indParam);
-		getOtherInjuries(dsd, "OIA", "Other Injuries", indParam);//
-		getSexualAssault(dsd, "SEA", "Sexual Assault", indParam);
-		getViolenceRelatedInjuries(dsd, "VIA", "Violence Related Injuries", indParam);
-		getBurns(dsd, "BUA", "Burns", indParam);
-		getSnakeBites(dsd, "SNA", "Snake bites", indParam);
-		getDogBites(dsd, "DOA", "Dog Bites", indParam);
-		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
-		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
-		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
-		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
-		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
-		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
-		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
-		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
-		getFistulaBirthRelated(dsd, "FIA", "Fistula (Birth Related)", indParam);
-		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
-		getPhysicalDisability(dsd, "PHA", "Physical Disability", indParam);//
-		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
-		getKalazarLeishmaniasis(dsd, "KAA", "Kalazar (leishmaniasis)", indParam);
-		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis (guinea worm)", indParam);
-		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
-		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
-		getPlague(dsd, "PLA", "Plague", indParam);//
-		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
-		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
-		getNoOfFirstAttendances(dsd, "NOA", "No. Of first attendances", indParam);//
-		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
-		getReferralsFromOtherHealthFacility(dsd, "RHA", "Referrals from other health facility", indParam);
-		getReferralsFromOtherCommunityUnit(dsd, "RCA", "Referrals from other community unit", indParam);
-		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
 		
+		//		getSuspectedMalaria(dsd, "SUA", "Suspected malaria", indParam);
+		//		getConfirmedMalaria(dsd, "COA", "Malaria positive", indParam);
+		//		getMalariaInPregnancy(dsd, "MPA", "Malaria In Pregnancy", indParam);//
+		//		getTyphoidFever(dsd, "TYA", "Typhoid Fever", indParam);
+		//		getSexuallyTransmittedInfections(dsd, "STIA", "STI", indParam);
+		//		getUrinaryTractInfection(dsd, "URA", "Urinary tract infection", indParam);
+		//		getBilharzia(dsd, "BIA", "Bilharzia", indParam);
+		//		getIntestinalWorms(dsd, "INA", "Intestinal worms", indParam);
+		//		getMalnutrition(dsd, "MLA", "Malnutrition", indParam);//
+		//		getAneamia(dsd, "ANA", "Aneamia", indParam);
+		//		getEyeInfections(dsd, "EYA", "Eye Infections", indParam);
+		//		getOtherEyeConditions(dsd, "OTA", "Other Eye Conditions", indParam);
+		//		getEarInfectionConditions(dsd, "EAA", "Ear Infection or Conditions", indParam);
+		//		getUpperRespiratoryTractInfections(dsd, "UPA", "URTI", indParam);
+		//		getAsthma(dsd, "ASA", "Asthma", indParam);
+		//		getPneumonia(dsd, "PNA", "Pneumonia", indParam);
+		//		getOtherDisOfRespiratorySystem(dsd, "ORA", "Other Dis Of Resp System", indParam);//
+		//		getAbortion(dsd, "ABA", "Abortion", indParam);//
+		//		getDisOfPuerperiumChildbath(dsd, "DPC", "Puerperium  Childbath", indParam);//
+		//		getHypertension(dsd, "HYA", "Hypertension", indParam);
+		//		getDentalDisorders(dsd, "DEA", "Dental Disorders", indParam);
+		//		getJiggersInfestation(dsd, "JIA", "Jiggers Infestation", indParam);
+		//		getDiseaseOfTheSkin(dsd, "DSA", "Disease Of The Skin", indParam);//
+		//		getAnthritisJointPains(dsd, "AJA", "Anthritis, joint pains", indParam);//
+		//		getPoisoning(dsd, "POA", "Poisoning", indParam);//
+		//		getRoadTrafficInjuries(dsd, "ROA", "Road Traffic Injuries", indParam);
+		//		getOtherInjuries(dsd, "OIA", "Other Injuries", indParam);//
+		//		getSexualAssault(dsd, "SEA", "Sexual Assault", indParam);
+		//		getViolenceRelatedInjuries(dsd, "VIA", "Violence Related Injuries", indParam);
+		//		getBurns(dsd, "BUA", "Burns", indParam);
+		//		getSnakeBites(dsd, "SNA", "Snake bites", indParam);
+		//		getDogBites(dsd, "DOA", "Dog Bites", indParam);
+		//		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
+		//		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
+		//		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
+		//		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
+		//		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
+		//		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
+		//		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
+		//		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
+		//		getFistulaBirthRelated(dsd, "FIA", "Fistula Birth Related", indParam);
+		//		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
+		//		getPhysicalDisability(dsd, "PHA", "Physical Disability", indParam);//
+		//		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
+		//		getKalazarLeishmaniasis(dsd, "KAA", "Kalazar leishmaniasis", indParam);
+		//		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis guinea worm", indParam);
+		//		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
+		//		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
+		//		getPlague(dsd, "PLA", "Plague", indParam);//
+		//		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
+		//		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
+		//		getNoOfFirstAttendances(dsd, "NOA", "No Of first attendances", indParam);//
+		//		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
+		//		getReferralsFromOtherHealthFacility(dsd, "RHA", "Health facility Referrals", indParam);
+		//		getReferralsFromOtherCommunityUnit(dsd, "RCA", "Referrals from community unit", indParam);
+		//		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
+		//		
 		return dsd;
 		
 	}
