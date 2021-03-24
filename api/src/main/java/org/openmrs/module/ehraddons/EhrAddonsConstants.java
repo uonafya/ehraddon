@@ -157,6 +157,11 @@ public class EhrAddonsConstants {
 
 		public static final String HAEMORRHAGIC_FEVER = '123112AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
 
+		public static final String PLAGUE = '114120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
+		public static final String ROAD_TRAFIC_INJURIES = '86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
+
+
+
 
 		
 
