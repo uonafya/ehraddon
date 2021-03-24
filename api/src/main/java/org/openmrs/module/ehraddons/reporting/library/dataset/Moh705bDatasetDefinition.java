@@ -817,6 +817,39 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 
 	}
 
+	private void getDeathDueToRoadTrafficInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getAllOtherDiseases(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getNoOfFirstAttendances(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
 	/**
 	 * Get moh 705 a dataset
 	 * 
@@ -891,6 +924,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
 		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
 		getPlague(dsd, "PLA", "Plague", indParam);//
+		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
+		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
+		getNoOfFirstAttendances(dsd, "NOA", "No. Of first attendances", indParam);//
 
 		return dsd;
 		
