@@ -772,7 +772,41 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		}
 
 	}
+
 	private void getDaracuncolosisGuineaWorm(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getYellowFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getViralHaemorrhagicFever(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getPlague(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
 												   String indParam) {
 
 		for (int i = 1; i <= 31; i++) {
@@ -854,6 +888,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
 		getKalazarLeishmaniasis(dsd, "KAA", "Kalazar (leishmaniasis)", indParam);
 		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis (guinea worm)", indParam);
+		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
+		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
+		getPlague(dsd, "PLA", "Plague", indParam);//
 
 		return dsd;
 		
