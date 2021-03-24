@@ -641,8 +641,41 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 	}
 
 
+	private void getNewlyDiagnosedHiv(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+
 	private void getDiabetes(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
 							   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getBrucellosis(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+	private void getCardiovascularConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+											 String indParam) {
 
 		for (int i = 1; i <= 31; i++) {
 			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
@@ -710,10 +743,12 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getDogBites(dsd, "DOA", "Dog Bites", indParam);
 		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
 		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
-		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);//
+		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
+		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
+		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
+		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
 
 		return dsd;
 		
 	}
-	
 }
