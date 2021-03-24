@@ -706,8 +706,41 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		}
 
 	}
-	
+
 	private void getMuscularSkeletalConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getFistulaBirthRelated(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getNeoplams(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getPhysicalDisability(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
 												   String indParam) {
 
 		for (int i = 1; i <= 31; i++) {
@@ -783,6 +816,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
 		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
 		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
+		getFistulaBirthRelated(dsd, "FIA", "Fistula (Birth Related)", indParam);
+		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
+		getPhysicalDisability(dsd, "PHA", "Physical Disability", indParam);//
 
 		return dsd;
 		
