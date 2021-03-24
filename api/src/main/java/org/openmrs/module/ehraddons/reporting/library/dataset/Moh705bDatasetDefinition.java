@@ -684,6 +684,40 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		}
 
 	}
+
+	private void getCentralNervousSystemConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+											 String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getOvrerweight(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+	
+	private void getMuscularSkeletalConditions(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
 	/**
 	 * Get moh 705 a dataset
 	 * 
@@ -747,6 +781,8 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
 		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
 		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
+		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
+		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
 
 		return dsd;
 		
