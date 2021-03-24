@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 import static org.openmrs.module.kenyacore.report.ReportUtils.map;
-import static org.openmrs.module.kenyaemr.reporting.EmrReportingUtils.cohortIndicator;
+import static org.openmrs.module.ehraddons.utils.EhrReportingUtils.cohortIndicator;
 
 @Component
 public class Moh705bIndicatorDefinition {

@@ -23,7 +23,7 @@ public class Moh705aCohortDefinition {
 	 * 
 	 * @return @{@link org.openmrs.module.reporting.cohort.definition.CohortDefinition}
 	 */
-	public CohortDefinition getPatientsWhoHaveDiagnosis(List<Integer> list) {
+	public CohortDefinition getPatientsWhoHaveDiagnosis705A(List<Integer> list) {
 		SqlCohortDefinition cd = new SqlCohortDefinition();
 		cd.setName("Get children patients who have diagnosis based on list of concepts");
 		cd.addParameter(new Parameter("startDate", "Start Date", Date.class));
@@ -33,34 +33,14 @@ public class Moh705aCohortDefinition {
 		return cd;
 	}
 	
-	/**
-	 * Patients who have encounters on date
-	 * 
-	 * @return @{@link CohortDefinition}
-	 */
-	public CohortDefinition getPatientsHavingEncountersOnDate(int day) {
-		CalculationCohortDefinition cd = new CalculationCohortDefinition("encounters",
-		        new EncountersBasedOnDaySuppliedCalculation());
-		cd.addParameter(new Parameter("endDate", "End Date", Date.class));
-		cd.addCalculationParameter("day", day);
-		return cd;
-	}
-	
-	/**
-	 * Get patients for the days per the calendar
-	 * 
-	 * @return @{@link CohortDefinition}
-	 */
-	public CohortDefinition getChildrenPatientsWhoHaveDiagnosisOnAgivenDay(List<Integer> list, int day) {
-		CompositionCohortDefinition cd = new CompositionCohortDefinition();
-		cd.setName("Chidren with diagnosis on a given day");
+	public CohortDefinition getPatientsWhoHaveDiagnosis705B(List<Integer> list) {
+		SqlCohortDefinition cd = new SqlCohortDefinition();
+		cd.setName("Get adults patients who have diagnosis based on list of concepts");
 		cd.addParameter(new Parameter("startDate", "Start Date", Date.class));
 		cd.addParameter(new Parameter("endDate", "End Date", Date.class));
-		cd.addSearch("A", ReportUtils.map(getPatientsWhoHaveDiagnosis(list), "startDate=${startDate},endDate=${endDate}"));
-		cd.addSearch("B", ReportUtils.map(getPatientsHavingEncountersOnDate(day), "endDate=${endDate}"));
-		cd.setCompositionString("A AND B");
+		cd.setQuery(Moh705Queries.getChildrenPatientsWhoMatchDiagnosisBasedOnConcepts(EhrAddonsMetadata
+		        .getDiagnosisConceptClass().getConceptClassId(), list));
 		return cd;
-		
 	}
 	
 }

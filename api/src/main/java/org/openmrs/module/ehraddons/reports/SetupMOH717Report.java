@@ -35,7 +35,7 @@ public class SetupMOH717Report extends AbstractReportBuilder {
 	private DataSetDefinition getMoh717ReportDataset() {
 		CohortIndicatorDataSetDefinition dsd = new CohortIndicatorDataSetDefinition();
 		dsd.setName("MOH717");
-		dsd.setDescription("MOH 717");
+		dsd.setDescription("MOH 717 Report");
 		dsd.addParameter(new Parameter("startDate", "Start Date", Date.class));
 		dsd.addParameter(new Parameter("endDate", "End Date", Date.class));
 		
