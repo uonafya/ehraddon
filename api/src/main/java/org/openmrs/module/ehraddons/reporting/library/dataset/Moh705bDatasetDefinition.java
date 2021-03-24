@@ -552,7 +552,105 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		}
 		
 	}
-	
+	private void getOtherInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+	        String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getSexualAssault(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+	        String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+			    moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getViolenceRelatedInjuries(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getBurns(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getSnakeBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getDogBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getOtherBites(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getEpilepsy(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+								  String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+
+	private void getDiabetes(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+							   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
 	/**
 	 * Get moh 705 a dataset
 	 * 
@@ -604,7 +702,16 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getAnthritisJointPains(dsd, "AJA", "Anthritis, joint pains", indParam);//
 		getPoisoning(dsd, "POA", "Poisoning", indParam);//
 		getRoadTrafficInjuries(dsd, "ROA", "Road Traffic Injuries", indParam);
-		
+		getOtherInjuries(dsd, "OIA", "Other Injuries", indParam);//
+		getSexualAssault(dsd, "SEA", "Sexual Assault", indParam);
+		getViolenceRelatedInjuries(dsd, "VIA", "Violence Related Injuries", indParam);
+		getBurns(dsd, "BUA", "Burns", indParam);
+		getSnakeBites(dsd, "SNA", "Snake bites", indParam);
+		getDogBites(dsd, "DOA", "Dog Bites", indParam);
+		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
+		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
+		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);//
+
 		return dsd;
 		
 	}
