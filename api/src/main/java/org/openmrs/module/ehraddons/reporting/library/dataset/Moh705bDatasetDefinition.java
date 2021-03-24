@@ -850,6 +850,50 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 
 	}
 
+	private void getReAttendances(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getReferralsFromOtherHealthFacility(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getReferralsFromOtherCommunityUnit(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
+	private void getReferralsToCommunityUnit(CohortIndicatorDataSetDefinition dsd, String columnData, String columnLabel,
+												   String indParam) {
+
+		for (int i = 1; i <= 31; i++) {
+			dsd.addColumn(columnData + i, columnLabel + '-' + i, ReportUtils.map(
+					moh705bIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), i), indParam), "");
+
+		}
+
+	}
+
 	/**
 	 * Get moh 705 a dataset
 	 * 
@@ -927,6 +971,9 @@ public class Moh705bDatasetDefinition extends EhrAddOnBaseDataSet {
 		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
 		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
 		getNoOfFirstAttendances(dsd, "NOA", "No. Of first attendances", indParam);//
+		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
+		getReferralsFromOtherHealthFacility(dsd, "RCA", "Referrals from other community unit", indParam);
+		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
 
 		return dsd;
 		
