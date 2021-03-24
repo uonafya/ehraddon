@@ -18,6 +18,12 @@ public class EhrAddonsConstants {
 	}
 	
 	public final class _EhrAddOnConcepts {
+
+		// Dysentery (Blood Bloody diarrhoea)
+	public static final String DYSENTERY = "152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 152
+	public static final String AMOEBIC_DYSENTERY = "149004AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 149004
+	public static final String SHIGELLA_DYSENTERY = "117126AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 117126
+	public static final String BACILLARY_DYSENTERY = "148036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 148036
 		
 		// Diarrhoe
 		public static final String ACUTE_DIARRHEA = "149856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
