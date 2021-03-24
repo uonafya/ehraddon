@@ -1,6 +1,5 @@
 package org.openmrs.module.ehraddons.reporting.calculation;
 
-import org.openmrs.Encounter;
 import org.openmrs.Visit;
 import org.openmrs.calculation.patient.PatientCalculationContext;
 import org.openmrs.calculation.result.CalculationResultMap;
@@ -8,16 +7,17 @@ import org.openmrs.calculation.result.ListResult;
 import org.openmrs.module.kenyacore.calculation.AbstractPatientCalculation;
 import org.openmrs.module.kenyacore.calculation.BooleanResult;
 import org.openmrs.module.kenyacore.calculation.CalculationUtils;
-import org.openmrs.module.kenyacore.calculation.Calculations;
 import org.openmrs.module.kenyacore.report.data.patient.definition.VisitsForPatientDataDefinition;
 import org.openmrs.module.reporting.common.TimeQualifier;
-import org.springframework.stereotype.Component;
 
 import java.text.Format;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
-@Component
 public class EncountersBasedOnDaySuppliedCalculation extends AbstractPatientCalculation {
 	
 	@Override
