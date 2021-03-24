@@ -55,13 +55,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
-			<artifactId>kenyaemr-api</artifactId>
-			<version>${kenyaemrVersion}</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.openmrs.module</groupId>
 			<artifactId>uiframework-api</artifactId>
 			<version>${uiframeworkVersion}</version>
 			<scope>provided</scope>

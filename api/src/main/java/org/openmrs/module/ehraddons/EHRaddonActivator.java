@@ -11,6 +11,8 @@ package org.openmrs.module.ehraddons;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.api.AdministrationService;
+import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
 
 /**
@@ -24,6 +26,7 @@ public class EHRaddonActivator extends BaseModuleActivator {
 	 * @see #started()
 	 */
 	public void started() {
+		removeOldReportRequests();
 		log.info("Started EHR add on");
 	}
 	
@@ -32,6 +35,12 @@ public class EHRaddonActivator extends BaseModuleActivator {
 	 */
 	public void shutdown() {
 		log.info("Shutdown EHR add on");
+	}
+	
+	private void removeOldReportRequests() {
+		AdministrationService as = Context.getAdministrationService();
+		as.executeSQL("delete from reporting_report_request;", false);
+		
 	}
 	
 }

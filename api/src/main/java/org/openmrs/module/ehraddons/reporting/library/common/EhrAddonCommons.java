@@ -18,10 +18,9 @@ public class EhrAddonCommons {
 	 * @return @{@link CohortDefinition}
 	 */
 	public CohortDefinition getPatientsHavingEncountersOnDate(int day) {
-		CalculationCohortDefinition cd = new CalculationCohortDefinition("Encounters per day", Context
-		        .getRegisteredComponents(EncountersBasedOnDaySuppliedCalculation.class).get(0));
-		cd.addParameter(new Parameter("onOrBefore", "On or before Date", Date.class));
-		cd.addParameter(new Parameter("onOrAfter", "On or After Date", Date.class));
+		CalculationCohortDefinition cd = new CalculationCohortDefinition("Encounters per day",
+		        new EncountersBasedOnDaySuppliedCalculation());
+		cd.addParameter(new Parameter("endDate", "End Date", Date.class));
 		cd.addCalculationParameter("day", day);
 		return cd;
 	}

@@ -1,21 +1,30 @@
 package org.openmrs.module.ehraddons.reporting.library.dataset;
 
 import org.openmrs.module.ehraddons.diagnosis.lists.DiagnosisLists;
+import org.openmrs.module.ehraddons.reporting.library.dimesions.EhrAddonDimesion;
 import org.openmrs.module.ehraddons.reporting.library.indicator.Moh705aIndicatorDefinition;
+import org.openmrs.module.ehraddons.reporting.utils.EhrAddonUtils;
+import org.openmrs.module.ehraddons.utils.EhrReportingUtils;
 import org.openmrs.module.kenyacore.report.ReportUtils;
 import org.openmrs.module.reporting.dataset.definition.CohortIndicatorDataSetDefinition;
 import org.openmrs.module.reporting.dataset.definition.DataSetDefinition;
+import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+
 @Component
-public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
+public class Moh705aDatasetDefinition {
 	
 	private Moh705aIndicatorDefinition moh705aIndicator;
 	
+	private EhrAddonDimesion ehrAddonDimesion;
+	
 	@Autowired
-	public Moh705aDatasetDefinition(Moh705aIndicatorDefinition moh705aIndicator) {
+	public Moh705aDatasetDefinition(Moh705aIndicatorDefinition moh705aIndicator, EhrAddonDimesion ehrAddonDimesion) {
 		this.moh705aIndicator = moh705aIndicator;
+		this.ehrAddonDimesion = ehrAddonDimesion;
 	}
 	
 	private void getTuberculosis(CohortIndicatorDataSetDefinition dsd, String indParam) {
@@ -2127,9 +2136,14 @@ public class Moh705aDatasetDefinition extends EhrAddOnBaseDataSet {
 		String indParam = "startDate=${startDate},endDate=${endDate}";
 		//dsd.addDimension("days", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
 		dsd.setName("MOH705A");
-		dsd.addParameters(getParameters());
+		dsd.addParameter(new Parameter("startDate", "Start Date", Date.class));
+		dsd.addParameter(new Parameter("endDate", "End Date", Date.class));
+		dsd.addDimension("day", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
 		// populate datasets
 		getDiarrhoea(dsd, indParam);
+		EhrReportingUtils.addRow(dsd, "DRH", "Diarrhoea", ReportUtils.map(
+		    moh705aIndicator.getAllPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList(), 1), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
 		getTuberculosis(dsd, indParam);
 		getDysentery(dsd, indParam);
 		getCholera(dsd, indParam);
