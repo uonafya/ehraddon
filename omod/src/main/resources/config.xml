@@ -26,6 +26,7 @@
 		<require_module>org.openmrs.calculation</require_module>
 		<require_module>org.openmrs.module.kenyacore</require_module>
 		<require_module>org.openmrs.module.ehrconfigs</require_module>
+		<require_module>org.openmrs.module.kenyaemr</require_module>
 	</require_modules>
 	
 	<!-- Extensions -->
