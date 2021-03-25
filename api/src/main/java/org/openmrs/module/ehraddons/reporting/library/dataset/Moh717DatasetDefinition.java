@@ -36,7 +36,7 @@ public class Moh717DatasetDefinition {
         dsd.addParameter(new Parameter("endDate", "end date", Date.class));
         String indParams = "startDate=${startDate},endDate=${endDate}";
         dsd.addDimension("state", map(ehrAddonDimesion.getNewOrRevisitPatients(), "endDate=${endDate}"));
-        dsd.addDimension("age", map(ehrAddonDimesion.getAge(), "endDate=${endDate}"));
+        dsd.addDimension("age", map(ehrAddonDimesion.getAge(), "effectiveDate=${endDate}"));
         dsd.addDimension("gender", map(ehrAddonDimesion.getGender(), ""));
 
         EhrReportingUtils.addRow(dsd, "OS", "OUTPATIENT SERVICES", ReportUtils.map(

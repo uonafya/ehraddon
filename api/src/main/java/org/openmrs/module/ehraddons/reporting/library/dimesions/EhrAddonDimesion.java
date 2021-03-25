@@ -111,7 +111,7 @@ public class EhrAddonDimesion {
 	 */
 	public CohortDefinitionDimension getAge() {
 		CohortDefinitionDimension dim = new CohortDefinitionDimension();
-		dim.addParameter(new Parameter("endDate", "End Date", Date.class));
+		dim.addParameter(new Parameter("effectiveDate", "Effective Date", Date.class));
 		dim.setName("Patient age - dim");
 		dim.addCohortDefinition("<5", map(commonLibrary.createXtoYAgeCohort(0, 5), "endDate=${endDate}"));
 		dim.addCohortDefinition(">5", map(commonLibrary.createXtoYAgeCohort(5, 60), "endDate=${endDate}"));
