@@ -53,24 +53,26 @@ public class Moh705bDatasetDefinition {
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getTuberculosisDiagnosisList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
 
-EhrReportingUtils.addRow(dsd, "CLA", "Cholera", ReportUtils.map(
+		EhrReportingUtils.addRow(dsd, "CLA", "Cholera", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getCholeraList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
 
-EhrReportingUtils.addRow(dsd, "MMA", "Meningococcal Meningitis", ReportUtils.map(
+		EhrReportingUtils.addRow(dsd, "MMA", "Meningococcal Meningitis", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
 
-EhrReportingUtils.addRow(dsd, "MOA", "Other Meningitis", ReportUtils.map(
+		EhrReportingUtils.addRow(dsd, "MOA", "Other Meningitis", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
 
-EhrReportingUtils.addRow(dsd, "NTA", "Neonatal Tetanus", ReportUtils.map(
+		EhrReportingUtils.addRow(dsd, "NTA", "Neonatal Tetanus", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
-EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
+
+		EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPoliomyelitisList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
+
 		EhrReportingUtils.addRow(dsd, "CPA", "Chicken Pox", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
@@ -131,7 +133,7 @@ EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
 
 
 
-//after other bites
+		//after other bites
 		EhrReportingUtils.addRow(dsd, "DTA", "Diabetes", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDiabetesList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
