@@ -124,8 +124,9 @@ EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
 		EhrReportingUtils.addRow(dsd, "MLA", "Malnutrition", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMalnutritionList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
-		EhrReportingUtils.addRow(dsd, "MLA", "Malnutrition", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPlagueList()), indParam),
+		
+		EhrReportingUtils.addRow(dsd, "ANE", "Aneamia", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getAneamiaList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
 
 
@@ -170,10 +171,6 @@ EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPhysicalDisabilityList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
 
-		EhrReportingUtils.addRow(dsd, "PHA", "Physical Disability", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getFistulaBirthRelatedList()), indParam),
-				EhrAddonUtils.getAdultChildrenColumns());
-
 		EhrReportingUtils.addRow(dsd, "TRA", "Tryponomiasis", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getTryponomiasisList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
@@ -204,20 +201,6 @@ EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getAllOtherDiseasesList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
 
-		EhrReportingUtils.addRow(dsd, "NOA", "No Of first attendances", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getNoOfFirstAttendancesList()), indParam),
-				EhrAddonUtils.getAdultChildrenColumns());
-
-		EhrReportingUtils.addRow(dsd, "RAA", "No Of Re-attendances", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getReAttendancesList()), indParam),
-				EhrAddonUtils.getAdultChildrenColumns());
-
-		EhrReportingUtils.addRow(dsd, "RHA", "Referrals from Health facility ", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getReferralsFromOtherHealthFacilityList()), indParam),
-				EhrAddonUtils.getAdultChildrenColumns());
-		EhrReportingUtils.addRow(dsd, "RCA", "Referrals from community unit", ReportUtils.map(
-				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getReferralsFromOtherHealthFacilityList()), indParam),
-				EhrAddonUtils.getAdultChildrenColumns());
 
 		return dsd;
 		
