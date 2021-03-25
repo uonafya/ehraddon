@@ -126,7 +126,7 @@ public class EhrAddonDimesion {
 		CohortDefinitionDimension dim = new CohortDefinitionDimension();
 		dim.setName("gender");
 		dim.addCohortDefinition("F", map(commonLibrary.femaleCohort(), ""));
-		dim.addCohortDefinition("F", map(commonLibrary.maleCohort(), ""));
+		dim.addCohortDefinition("M", map(commonLibrary.maleCohort(), ""));
 		return dim;
 	}
 }
