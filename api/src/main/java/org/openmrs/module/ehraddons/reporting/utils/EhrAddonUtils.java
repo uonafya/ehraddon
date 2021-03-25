@@ -42,4 +42,31 @@ public class EhrAddonUtils {
 		return Arrays.asList(day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13, day14, day15,
 		    day16, day17, day18, day19, day20, day21, day22, day23, day24, day25, day26, day27, day28, day29, day30, day31);
 	}
+
+	public static List<ColumnParameters> getGeneralOutPatientFilters() {
+
+		ColumnParameters under5MaleNew = new ColumnParameters("under5MaleNew", "below 5 and new", "state=NEW|age=<5|gender=M", "01");
+		ColumnParameters under5MaleRevisit = new ColumnParameters("over5MaleRevisit", "below 5 and revisit", "state=RVT|age=<5|gender=M", "02");
+		ColumnParameters under5FemaleNew = new ColumnParameters("under5FemaleNew", "below 5 and new", "state=NEW|age=<5|gender=F", "03");
+		ColumnParameters under5FemaleRevisit = new ColumnParameters("over5FemaleRevisit", "below 5 and revisit", "state=RVT|age=<5|gender=F", "04");
+		ColumnParameters over5MaleNew = new ColumnParameters("over5MaleNew", "above 5 and new", "state=NEW|age=>5|gender=M", "05");
+		ColumnParameters over5MaleRevisit = new ColumnParameters("over5MaleRevisit", "above 5 and revisit", "state=RVT|age=>5|gender=M", "06");
+		ColumnParameters over5FemaleNew = new ColumnParameters("over5MaleNew", "above 5 and new", "state=NEW|age=>5|gender=F", "07");
+		ColumnParameters over5FemaleRevisit = new ColumnParameters("over5MaleRevisit", "above 5 and revisit", "state=RVT|age=>5|gender=F", "08");
+		ColumnParameters over60New = new ColumnParameters("over60New", "above 60 and new", "state=NEW|age=>60", "09");
+		ColumnParameters over60Revisit = new ColumnParameters("over60Revisit", "above 60 and revisit", "state=RVT|age=>60", "10");
+
+		return Arrays.asList(under5MaleNew,
+				under5MaleRevisit,
+				under5FemaleNew,
+				under5FemaleRevisit,
+				over5MaleNew,
+				over5MaleRevisit,
+				over5FemaleNew,
+				over5FemaleRevisit,
+				over5MaleRevisit,
+				over60New,
+				over60Revisit);
+
+	}
 }
