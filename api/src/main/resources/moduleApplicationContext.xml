@@ -55,16 +55,30 @@
             </list>
         </property>
     </bean>
-    <bean id="ehraddons.config.report" class="org.openmrs.module.kenyacore.report.ReportConfiguration">
-        <property name="commonReports">
+
+    <bean id="ehraddon.add.program" class="org.openmrs.module.kenyacore.program.ProgramDescriptor">
+        <property name="targetUuid" value="7a822d3e-8d40-11eb-92cc-5f145f16bd2e" />
+        <property name="eligibilityCalculation" value="org.openmrs.module.ehraddons.calculation.EligibleForEhrAddonProgramCalculation" />
+        <property name="defaultEnrollmentForm" ref="ehraddons.form.enrollment" />
+        <property name="defaultCompletionForm" ref="ehraddons.form.enrollment" />
+        <property name="reports">
             <set>
                 <ref bean="ehraddons.common.705a" />
                 <ref bean="ehraddons.common.705b" />
                 <ref bean="ehraddons.common.717" />
                 <ref bean="ehraddons.common.report.labadults" />
+                <ref bean="ehraddons.common.report.labchildren" />
 
             </set>
         </property>
+        <property name="fragments">
+            <map>
+                <entry key="enrollment-summary" value="ehraddons:ehraddonEnrollmentSummary" />
+                <entry key="care-panel" value="ehraddons:ehraddonsCarePanel" />
+                <entry key="completion-summary" value="ehraddons:ehraddonsCompletionSummary" />
+            </map>
+        </property>
+        <property name="order" value="1000" />
     </bean>
     <bean id="ehraddons.common.705a" class="org.openmrs.module.kenyacore.report.IndicatorReportDescriptor">
         <property name="targetUuid" value="64033c7a-8330-11eb-8436-ffdeb21f9dd8" />
@@ -109,5 +123,29 @@
         </property>
         <property name="template" value="ehraddons:labadults.xls" />
         <property name="repeatingSection" value="sheet:1,row:4,dataset:labadults" />
+    </bean>
+
+    <bean id="ehraddons.common.report.labchildren" class="org.openmrs.module.kenyacore.report.HybridReportDescriptor">
+        <property name="targetUuid" value="36f5d2c4-8d44-11eb-bc85-cbebdbabd35c" />
+        <property name="name" value="Laboratory Results ListingvReport for children" />
+        <property name="description" value="Laboratory Results Report for adults" />
+        <property name="apps">
+            <set>
+                <ref bean="kenyaemr.app.reports" />
+            </set>
+        </property>
+        <property name="template" value="ehraddons:labadults.xls" />
+        <property name="repeatingSection" value="sheet:1,row:4,dataset:labadults" />
+    </bean>
+
+    <bean id="ehraddons.form.enrollment" class="org.openmrs.module.kenyacore.form.FormDescriptor">
+        <property name="targetUuid" value="66c4664a-8d45-11eb-9ab1-3359b033ed37" />
+        <property name="apps">
+            <set>
+                <ref bean="kenyaemr.app.reports" />
+            </set>
+        </property>
+        <property name="icon" value="kenyaui:forms/generic.png" />
+        <property name="htmlform" value="ehraddons:oncologyEnrollment.html" />
     </bean>
 </beans>
