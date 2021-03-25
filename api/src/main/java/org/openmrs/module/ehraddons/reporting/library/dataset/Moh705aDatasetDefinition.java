@@ -280,28 +280,6 @@ public class Moh705aDatasetDefinition {
 		EhrReportingUtils.addRow(dsd, "PLC", "Plague", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPlagueList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-		
-
-
-
-
-
-
-		
 		return dsd;
 		
 	}

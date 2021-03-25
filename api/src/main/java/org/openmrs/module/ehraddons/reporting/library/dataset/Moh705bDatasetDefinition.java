@@ -131,8 +131,6 @@ public class Moh705bDatasetDefinition {
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getAneamiaList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
 
-
-
 		//after other bites
 		EhrReportingUtils.addRow(dsd, "DTA", "Diabetes", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDiabetesList()), indParam),
