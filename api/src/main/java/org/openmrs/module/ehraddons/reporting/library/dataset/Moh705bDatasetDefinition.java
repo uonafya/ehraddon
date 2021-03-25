@@ -42,82 +42,168 @@ public class Moh705bDatasetDefinition {
 		dsd.addDimension("day", ReportUtils.map(ehrAddonDimesion.encountersOfMonthPerDay(), "endDate=${endDate}"));
 		;
 		// populate datasets
-		//getDiarrhoea(dsd, indParam);
 		EhrReportingUtils.addRow(dsd, "DA", "Diarrhoea", ReportUtils.map(
 		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDiarrheaDiagnosisList()), indParam),
 		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "DYA", "Dysentery", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDysenteryList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "TBA", "Tuberculosis", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getTuberculosisDiagnosisList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "CLA", "Cholera", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getCholeraList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "MMA", "Meningococcal Meningitis", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMeningococcalMeningitisList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "MOA", "Other Meningitis", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getOtherMenigitisList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "NTA", "Neonatal Tetanus", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getNeonatalTetanusList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "PMA", "Poliomyelitis", ReportUtils.map(
+		    moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPoliomyelitisList()), indParam),
+		    EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "CPA", "Chicken Pox", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getChickenPoxList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "MEA", "Measles", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMeaslesList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "HEA", "Hepatitis", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getHepatitisList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "MUA", "Mumps", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMumpsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "FEA", "Fevers", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getFeversList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "SUA", "Suspected malaria", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getSuspectedMalariaList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "COA", "Confirmed Malaria positive", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getConfirmedMalariaList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+
+		EhrReportingUtils.addRow(dsd, "MPA", "Malaria In Pregnancy", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMalariaInPregnancyList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "TYA", "Typhoid Fever", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getTyphoidList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "STIA", "STI", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getSexuallyTransmittedInfectionsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "URA", "Urinary tract infection", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getUrinaryTractInfectionList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "BIA", "Bilharzia", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getBilharziaList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "INA", "Intestinal worms", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getInterstinalwormsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
 		
-		//getTuberculosis(dsd, indParam);
-		//getDysentery(dsd, "DYA", "Dysentery", indParam);
-		//getCholera(dsd, "CHA", "Cholera", indParam);
-		//getMeningococcalMeningitis(dsd, "MMA", "Meningitis", indParam);
+
+		EhrReportingUtils.addRow(dsd, "MLA", "Malnutrition", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMalnutritionList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
 		
-		//getOtherMeningitis(dsd, "MOA", "OtherMeningitis", indParam);
-		//getNeonatalTetanus(dsd, "NTA", "Neonatal Tetanus", indParam);
-		//getPoliomyelitis(dsd, "PMA", "Poliomyelitis", indParam);
-		//getChickenPox(dsd, "CPA", "Chicken pox", indParam);
-		//getMeasles(dsd, "MEA", "Measles", indParam);
-		//getHepatitis(dsd, "HEA", "Hepatitis", indParam);
-		//getMumps(dsd, "MUA", "Mumps", indParam);
-		//getFevers(dsd, "FEA", "Fevers", indParam);
-		
-		//		getSuspectedMalaria(dsd, "SUA", "Suspected malaria", indParam);
-		//		getConfirmedMalaria(dsd, "COA", "Malaria positive", indParam);
-		//		getMalariaInPregnancy(dsd, "MPA", "Malaria In Pregnancy", indParam);//
-		//		getTyphoidFever(dsd, "TYA", "Typhoid Fever", indParam);
-		//		getSexuallyTransmittedInfections(dsd, "STIA", "STI", indParam);
-		//		getUrinaryTractInfection(dsd, "URA", "Urinary tract infection", indParam);
-		//		getBilharzia(dsd, "BIA", "Bilharzia", indParam);
-		//		getIntestinalWorms(dsd, "INA", "Intestinal worms", indParam);
-		//		getMalnutrition(dsd, "MLA", "Malnutrition", indParam);//
-		//		getAneamia(dsd, "ANA", "Aneamia", indParam);
-		//		getEyeInfections(dsd, "EYA", "Eye Infections", indParam);
-		//		getOtherEyeConditions(dsd, "OTA", "Other Eye Conditions", indParam);
-		//		getEarInfectionConditions(dsd, "EAA", "Ear Infection or Conditions", indParam);
-		//		getUpperRespiratoryTractInfections(dsd, "UPA", "URTI", indParam);
-		//		getAsthma(dsd, "ASA", "Asthma", indParam);
-		//		getPneumonia(dsd, "PNA", "Pneumonia", indParam);
-		//		getOtherDisOfRespiratorySystem(dsd, "ORA", "Other Dis Of Resp System", indParam);//
-		//		getAbortion(dsd, "ABA", "Abortion", indParam);//
-		//		getDisOfPuerperiumChildbath(dsd, "DPC", "Puerperium  Childbath", indParam);//
-		//		getHypertension(dsd, "HYA", "Hypertension", indParam);
-		//		getDentalDisorders(dsd, "DEA", "Dental Disorders", indParam);
-		//		getJiggersInfestation(dsd, "JIA", "Jiggers Infestation", indParam);
-		//		getDiseaseOfTheSkin(dsd, "DSA", "Disease Of The Skin", indParam);//
-		//		getAnthritisJointPains(dsd, "AJA", "Anthritis, joint pains", indParam);//
-		//		getPoisoning(dsd, "POA", "Poisoning", indParam);//
-		//		getRoadTrafficInjuries(dsd, "ROA", "Road Traffic Injuries", indParam);
-		//		getOtherInjuries(dsd, "OIA", "Other Injuries", indParam);//
-		//		getSexualAssault(dsd, "SEA", "Sexual Assault", indParam);
-		//		getViolenceRelatedInjuries(dsd, "VIA", "Violence Related Injuries", indParam);
-		//		getBurns(dsd, "BUA", "Burns", indParam);
-		//		getSnakeBites(dsd, "SNA", "Snake bites", indParam);
-		//		getDogBites(dsd, "DOA", "Dog Bites", indParam);
-		//		getOtherBites(dsd, "OBA", "Other Bites", indParam);//
-		//		getDiabetes(dsd, "DTA", "Diabetes", indParam);//
-		//		getEpilepsy(dsd, "EPA", "Epilepsy", indParam);
-		//		getNewlyDiagnosedHiv(dsd, "NHA", "Newly Diagnosed Hiv", indParam);//
-		//		getBrucellosis(dsd, "BRA", "Brucellosis", indParam);//
-		//		getCardiovascularConditions(dsd, "CAA", "Cardiovascular Conditions", indParam);
-		//		getOvrerweight(dsd, "OVA", "Ovrerweight", indParam);
-		//		getMuscularSkeletalConditions(dsd, "MSA", "Muscular Skeletal Conditions", indParam);
-		//		getFistulaBirthRelated(dsd, "FIA", "Fistula Birth Related", indParam);
-		//		getNeoplams(dsd, "NSA", "Neoplams)", indParam);
-		//		getPhysicalDisability(dsd, "PHA", "Physical Disability", indParam);//
-		//		getTryponomiasis(dsd, "TRA", "Tryponomiasis", indParam);
-		//		getKalazarLeishmaniasis(dsd, "KAA", "Kalazar leishmaniasis", indParam);
-		//		getDaracuncolosisGuineaWorm(dsd, "SAA", "Daracuncolosis guinea worm", indParam);
-		//		getYellowFever(dsd, "YEA", "Yellow Fever", indParam);
-		//		getViralHaemorrhagicFever(dsd, "VHA", "Viral Haemorrhagic Fever", indParam);//
-		//		getPlague(dsd, "PLA", "Plague", indParam);//
-		//		getDeathDueToRoadTrafficInjuries(dsd, "DRA", "Death due to road traffic injuries", indParam);//
-		//		getAllOtherDiseases(dsd, "ALA", "All other diseases", indParam);//
-		//		getNoOfFirstAttendances(dsd, "NOA", "No Of first attendances", indParam);//
-		//		getReAttendances(dsd, "RAA", "No. Of first attendances", indParam);//
-		//		getReferralsFromOtherHealthFacility(dsd, "RHA", "Health facility Referrals", indParam);
-		//		getReferralsFromOtherCommunityUnit(dsd, "RCA", "Referrals from community unit", indParam);
-		//		getReferralsToCommunityUnit(dsd, "RCTA", "Referrals to community unit", indParam);//
-		//		
+		EhrReportingUtils.addRow(dsd, "ANE", "Aneamia", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getAneamiaList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+
+
+		//after other bites
+		EhrReportingUtils.addRow(dsd, "DTA", "Diabetes", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDiabetesList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "EPA", "Epilepsy", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getEpilepsyList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "NHA", "Newly Diagnosed Hiv", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getEpilepsyList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "BRA", "Brucellosis", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getBrucellosisList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "CAA", "Cardiovascular Conditions", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getCardiovascularConditionsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "OVA", "Overweight", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getOvrerweightList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "MSA", "Muscular Skeletal Conditions", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getMuscularSkeletalConditionsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "FIA", "Fistula Birth Related", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getFistulaBirthRelatedList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "NSA", "Neoplams", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getNeoplamsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "PHA", "Physical Disability", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPhysicalDisabilityList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "TRA", "Tryponomiasis", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getTryponomiasisList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "KAA", "Kalazar leishmaniasis", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getKalazarLeishmaniasisList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "DAA", "Daracuncolosis Guinea Worm", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getDaracuncolosisGuineaWormList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "YEA", "Yellow Fever", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getYellowFeverList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "VHA", "Viral Haemorrhagic Fever", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getViralHaemorrhagicFeverList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "PLA", "Plague", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPlagueList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+		EhrReportingUtils.addRow(dsd, "DRA", "Death due to road traffic injuries", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getPlagueList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "ALA", "All other diseases", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getAllOtherDiseasesList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
+
 		return dsd;
 		
 	}
