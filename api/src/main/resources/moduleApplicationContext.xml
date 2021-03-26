@@ -28,7 +28,7 @@
     <!-- Wraps EHRaddonService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
     <bean id="ehraddons.EHRaddonService"
-            class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+          class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager">
             <ref bean="transactionManager" />
         </property>
@@ -110,7 +110,7 @@
             <set>
                 <ref bean="kenyaemr.app.reports" />
             </set></property>
-        <property name="template" value="ehraddons:MOH_705b.xls" />
+        <property name="template" value="ehraddons:MOH_717.xls" />
     </bean>
     <bean id="ehraddons.common.report.labadults" class="org.openmrs.module.kenyacore.report.HybridReportDescriptor">
         <property name="targetUuid" value="f85b114a-86eb-11eb-9eda-eb0964963ce6" />
@@ -126,15 +126,26 @@
     </bean>
 
     <bean id="ehraddons.common.report.labchildren" class="org.openmrs.module.kenyacore.report.HybridReportDescriptor">
-        <property name="targetUuid" value="08c626ac-8704-11eb-857b-086266b602c9" />
-        <property name="name" value="Laboratory Results Report for children" />
-        <property name="description" value="Laboratory Results Report for children" />
+        <property name="targetUuid" value="36f5d2c4-8d44-11eb-bc85-cbebdbabd35c" />
+        <property name="name" value="Laboratory Results ListingvReport for children" />
+        <property name="description" value="Laboratory Results Report for adults" />
         <property name="apps">
             <set>
                 <ref bean="kenyaemr.app.reports" />
             </set>
         </property>
-        <property name="template" value="ehraddons:labchildren.xls" />
-        <property name="repeatingSection" value="sheet:1,row:4,dataset:children" />
+        <property name="template" value="ehraddons:labadults.xls" />
+        <property name="repeatingSection" value="sheet:1,row:4,dataset:labadults" />
+    </bean>
+
+    <bean id="ehraddons.form.enrollment" class="org.openmrs.module.kenyacore.form.FormDescriptor">
+        <property name="targetUuid" value="66c4664a-8d45-11eb-9ab1-3359b033ed37" />
+        <property name="apps">
+            <set>
+                <ref bean="initialpatientqueueapp.app.initialpatientqueueapp.queue" />
+            </set>
+        </property>
+        <property name="icon" value="kenyaui:forms/generic.png" />
+        <property name="htmlform" value="ehraddons:test.html" />
     </bean>
 </beans>
