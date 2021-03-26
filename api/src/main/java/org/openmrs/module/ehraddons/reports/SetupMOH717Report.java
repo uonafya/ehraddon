@@ -28,16 +28,17 @@ public class SetupMOH717Report extends AbstractReportBuilder {
 	public SetupMOH717Report(Moh717DatasetDefinition moh717DatasetDefinition) {
 		this.moh717DatasetDefinition = moh717DatasetDefinition;
 	}
-	
+
 	@Override
 	protected List<Parameter> getParameters(ReportDescriptor reportDescriptor) {
 		return Arrays.asList(new Parameter("startDate", "Start Date", Date.class), new Parameter("endDate", "End Date",
 		        Date.class));
 	}
-	
+
 	@Override
 	protected List<Mapped<DataSetDefinition>> buildDataSets(ReportDescriptor reportDescriptor,
 	        ReportDefinition reportDefinition) {
 		return Arrays.asList(map(moh717DatasetDefinition.constructMoh717Dataset(), "startDate=${startDate},endDate=${endDate}"));
 	}
+
 }
