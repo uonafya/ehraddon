@@ -172,6 +172,10 @@ public class Moh705bDatasetDefinition {
 				moh705aIndicator.getAllChildrenPatientsWithDiagnosis(DiagnosisLists.getDisOfPuerperiumChildbathList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
 
+		EhrReportingUtils.addRow(dsd, "HYA", "Hypertension", ReportUtils.map(
+				moh705aIndicator.getAllChildrenPatientsWithDiagnosis(DiagnosisLists.getHypertensionList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
 		EhrReportingUtils.addRow(dsd, "MDA", "Mental Disorders", ReportUtils.map(
 				moh705aIndicator.getAllChildrenPatientsWithDiagnosis(DiagnosisLists.getMentalDisordersList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
@@ -252,6 +256,11 @@ public class Moh705bDatasetDefinition {
 		EhrReportingUtils.addRow(dsd, "CAA", "Cardiovascular Conditions", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getCardiovascularConditionsList()), indParam),
 				EhrAddonUtils.getAdultChildrenColumns());
+
+		EhrReportingUtils.addRow(dsd, "CNSA", "Central Nervous System Conditions", ReportUtils.map(
+				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getCentralNervousSystemConditionsList()), indParam),
+				EhrAddonUtils.getAdultChildrenColumns());
+
 
 		EhrReportingUtils.addRow(dsd, "OVA", "Overweight", ReportUtils.map(
 				moh705aIndicator.getAllAdultPatientsWithDiagnosis(DiagnosisLists.getOvrerweightList()), indParam),
