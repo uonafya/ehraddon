@@ -28,15 +28,23 @@ public class SetupChildrenLabResultsReport extends AbstractHybridReportBuilder {
 	        PatientDataSetDefinition patientDataSetDefinition) {
 		return null;
 	}
+
+	@Override
+	protected List<Parameter> getParameters(ReportDescriptor reportDescriptor) {
+		return Arrays.asList(new Parameter("startDate", "Start Date", Date.class),
+				new Parameter("endDate", "End Date",	Date.class));
+	}
 	
 	@Override
 	protected List<Mapped<DataSetDefinition>> buildDataSets(ReportDescriptor descriptor, ReportDefinition report) {
 		SqlDataSetDefinition dsd = new SqlDataSetDefinition();
-		dsd.setName("children");
-
+		dsd.setName("CHILDREN");
+		dsd.addParameter(new Parameter("startDate", "Start Date", Date.class));
+		dsd.addParameter(new Parameter("endDate", "End Date", Date.class));
 		dsd.setSqlQuery(LabReportQueries.getLabChildrenResultsQuery());
 		
 		String indParams = "startDate=${startDate},endDate=${endDate}";
-		return Arrays.asList(ReportUtils.map((DataSetDefinition) dsd, ""));
+		return Arrays.asList(ReportUtils.map((DataSetDefinition) dsd,
+				"startDate=${startDate},endDate=${endDate}"));
 	}
 }
