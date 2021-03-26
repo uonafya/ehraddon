@@ -27,13 +27,8 @@ public class Moh717Constants {
 
 
     // Concepts
-//    public static final String ENT_CLINIC = "";
-//    public static final String TB_LEPROSY_CLINIC = "";
-    public static final String EYE_CLINIC = "a91acb56-4bdb-4b48-b9ef-1962efda55b4";  //165384
-    public static final String STI_CLINIC = "160546AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 160546 Sexually transmitted infection program/clinic
-    public static final String CCC_CLINIC = "162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; // 	Comprehensive care center
-    public static final String PSYCHIATRIC_CLINIC = "59218b74-e6fc-4928-a62d-08bcef9e1510"; //id-165385 PSYCHIATRIC CLINIC
-    
+//  public static final String ENT_CLINIC = "";
+//  public static final String TB_LEPROSY_CLINIC = "";
 //    public static final String ORTHOPAEDIC_CLINIC = ""; //
 //    Occupational Therapy Clinic
 //    Physiotherapy Clinic
@@ -43,8 +38,7 @@ public class Moh717Constants {
 //    Nutrition Clinic
 //    Oncology Clinic
 //    Renal Clinic
-    public static final String SPECIAL_CLINIC = "f5c89e8c-c79e-4e20-9048-b7ef8f30b272";  //id-165386
 //    public static final String DENTAL_CLINIC = "";
-    
-    
+
+
 }
