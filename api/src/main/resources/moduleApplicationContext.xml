@@ -28,7 +28,7 @@
     <!-- Wraps EHRaddonService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
     <bean id="ehraddons.EHRaddonService"
-            class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+          class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager">
             <ref bean="transactionManager" />
         </property>
@@ -134,8 +134,8 @@
                 <ref bean="kenyaemr.app.reports" />
             </set>
         </property>
-        <property name="template" value="ehraddons:labadults.xls" />
-        <property name="repeatingSection" value="sheet:1,row:4,dataset:labadults" />
+        <property name="template" value="ehraddons:labchildren.xls" />
+        <property name="repeatingSection" value="sheet:1,row:4,dataset:labchildren" />
     </bean>
 
     <bean id="ehraddons.form.enrollment" class="org.openmrs.module.kenyacore.form.FormDescriptor">
